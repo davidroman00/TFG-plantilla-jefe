@@ -1530,8 +1530,6 @@ GameObject:
   - component: {fileID: 1188573640}
   - component: {fileID: 1188573643}
   - component: {fileID: 1188573642}
-  - component: {fileID: 1188573641}
-  - component: {fileID: 1188573644}
   m_Layer: 0
   m_Name: CharacterController
   m_TagString: Player
@@ -1577,19 +1575,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1188573641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188573638}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e2673a06884f9042808db8fd17cb529, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _speed: 10
 --- !u!136 &1188573642
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1639,20 +1624,6 @@ CharacterController:
   m_SkinWidth: 0.075
   m_MinMoveDistance: 0.02
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1188573644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1188573638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20473d67921fcfe40affbba357bb21cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 10
-  Camera: {fileID: 1400907638}
 --- !u!1 &1223166095
 GameObject:
   m_ObjectHideFlags: 3

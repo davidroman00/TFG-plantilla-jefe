@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class CharacterMovementAndAnimationsController : MonoBehaviour
 {
-    [SerializeField]
-    float Speed = 10f;
     float _turnSmoothTime = .1f;
     float _turnSmoothVelocity;
     float _horizontalInput;
@@ -13,14 +11,16 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     Vector3 _initialDirection;
     Vector3 _moveDirection;
     [SerializeField]
-    Transform Camera;
-    CharacterController _characterController;
+    Transform _camera;
     Animator _animator;
+    CharacterController _characterController;
+    CharacterStats _characterStats;
 
     void Awake()
     {
         _characterController = GetComponent<CharacterController>();
         _animator = GetComponent<Animator>();
+        _characterStats = GetComponent<CharacterStats>();
     }
 
     void Update()
@@ -49,11 +49,11 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
 
     }
     void HandlePlayerMovementAndRotation(){
-        float targetAngle = Mathf.Atan2(_initialDirection.x, _initialDirection.z) * Mathf.Rad2Deg + Camera.eulerAngles.y;
+        float targetAngle = Mathf.Atan2(_initialDirection.x, _initialDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
         _moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
-        _characterController.Move(_moveDirection.normalized * Speed * Time.deltaTime);
+        _characterController.Move(_moveDirection.normalized * _characterStats.MovementSpeed * Time.deltaTime);
     }
 }

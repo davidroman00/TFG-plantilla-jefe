@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class CharacterMovementAndAnimationsController : MonoBehaviour
 {
+    bool _isAttacking;
+    public bool IsAttacking { set {_isAttacking = value; } }
+    bool _isBackdashing;
+    public bool IsBackdashing { set { _isBackdashing = value; } }
     float _lastAttackUse;
     float _lastBackdashUse;
     float _turnSmoothTime = .1f;
@@ -29,7 +33,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     {
         HandleInput();  
 
-        if (_initialDirection.magnitude > .05f){
+        if (_initialDirection.magnitude > .05f && !_isAttacking && !_isBackdashing){
             HandlePlayerMovementAndRotation();
             _animator.SetBool("isWalking", true);            
         } else {

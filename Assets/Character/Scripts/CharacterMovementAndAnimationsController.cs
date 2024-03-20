@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CharacterMovementAndAnimationsController : MonoBehaviour
 {
+    float _lastAttackUse;
+    float _lastBackdashUse;
     float _turnSmoothTime = .1f;
     float _turnSmoothVelocity;
     float _horizontalInput;
@@ -40,11 +42,13 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
         _verticalInput = Input.GetAxisRaw("Vertical");
         _initialDirection = new Vector3 (_horizontalInput, 0f, _verticalInput).normalized;
 
-        if(Input.GetKeyDown("space")){
+        if(Input.GetKeyDown("space") && !IsBackdashOnCooldown()){
             _animator.SetTrigger("Backdashed");
+            _lastBackdashUse = Time.time;
         } 
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButtonDown(0) && !IsAttackOnCooldown()){
             _animator.SetTrigger("Attacked");
+            _lastAttackUse = Time.time;
         } 
 
     }
@@ -55,5 +59,11 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
 
         _moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
         _characterController.Move(_moveDirection.normalized * _characterStats.MovementSpeed * Time.deltaTime);
+    }
+    bool IsBackdashOnCooldown(){
+        return Time.time < _lastBackdashUse + _characterStats.BackdashCooldown;
+    }
+    bool IsAttackOnCooldown(){
+        return Time.time < _lastAttackUse + _characterStats.AttackCooldown;
     }
 }

@@ -15,6 +15,5 @@ public class BossHealthManager : MonoBehaviour
     public void CurrentHealthManager(float value)
     {
         _currentHealth -= value;
-        Debug.Log(_currentHealth);
     }
 }

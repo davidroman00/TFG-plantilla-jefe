@@ -21,6 +21,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     Animator _animator;
     CharacterController _characterController;
     CharacterStats _characterStats;
+    public CharacterHealthManager _chm;
 
     void Awake()
     {
@@ -48,7 +49,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
 
         if(Input.GetKeyDown("space") && !IsBackdashOnCooldown()){
             _animator.SetTrigger("Backdashed");
-            _lastBackdashUse = Time.time;
+            _lastBackdashUse = Time.time;            
         } 
         if(Input.GetMouseButtonDown(0) && !IsAttackOnCooldown()){
             _animator.SetTrigger("Attacked");

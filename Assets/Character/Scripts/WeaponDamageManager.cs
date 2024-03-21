@@ -11,11 +11,11 @@ public class WeaponDamageManager : MonoBehaviour
         _characterStats = GetComponentInParent<CharacterStats>();
     }
 
-    void OnTriggerEnter(Collider enemy)
+    void OnTriggerEnter(Collider collider)
     {
-        if (enemy.GetComponent<BossHealthManager>() && this.enabled == true)
+        if (collider.GetComponent<BossHealthManager>() && this.enabled == true)
         {
-            enemy.GetComponent<BossHealthManager>().CurrentHealthManager(_characterStats.AttackDamage);
+            collider.GetComponent<BossHealthManager>().CurrentHealthManager(_characterStats.AttackDamage);
         }
     }
 }

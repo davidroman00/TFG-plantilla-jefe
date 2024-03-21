@@ -15,7 +15,7 @@ public class CharacterStats : MonoBehaviour
     [SerializeField]
     float _backdashCooldown = 2.5f;
 
-    public float MaxHealth { get { return _maxHealth; } }
+    public float MaxHealth { get { return _maxHealth; } set { _maxHealth = value; } }
     public float MovementSpeed { get { return _movementSpeed; } }
     public float AttackDamage { get { return _attackDamage; } }
     public float AttackCooldown { get { return _attackCooldown; } }

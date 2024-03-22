@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossHealthManager : MonoBehaviour
+public class EnemyHealthManager : MonoBehaviour
 { //podria ser el mismo script de recibir daño en el pj y el boss, pero de esta manera se evita el friendly fire
     float _currentHealth = 100;
     //BossStats _bossStats;

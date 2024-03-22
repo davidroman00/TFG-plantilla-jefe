@@ -13,9 +13,9 @@ public class WeaponDamageManager : MonoBehaviour
 
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.GetComponent<BossHealthManager>() && this.enabled == true)
+        if (collider.GetComponent<EnemyHealthManager>() && this.enabled == true)
         {
-            collider.GetComponent<BossHealthManager>().CurrentHealthManager(_characterStats.AttackDamage);
+            collider.GetComponent<EnemyHealthManager>().CurrentHealthManager(_characterStats.AttackDamage);
         }
     }
 }

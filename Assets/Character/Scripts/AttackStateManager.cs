@@ -10,7 +10,7 @@ public class AttackStateManager : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Attacked");
+        animator.ResetTrigger("attacked");
         animator.GetComponent<CharacterMovementAndAnimationsController>().IsAttacking = false;
     }
 }

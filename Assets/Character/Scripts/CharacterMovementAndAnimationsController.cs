@@ -60,12 +60,12 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
         }
         if (Input.GetKeyDown("space") && !IsBackdashOnCooldown())
         {
-            _animator.SetTrigger("Backdashed");
+            _animator.SetTrigger("backdashed");
             _lastBackdashUse = Time.time;
         }
         if (Input.GetMouseButtonDown(0) && !IsAttackOnCooldown())
         {
-            _animator.SetTrigger("Attacked");
+            _animator.SetTrigger("attacked");
             _lastAttackUse = Time.time;
         }
     }

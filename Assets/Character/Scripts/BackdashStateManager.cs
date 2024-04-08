@@ -10,7 +10,7 @@ public class BackdashStateManager : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("Backdashed");
+        animator.ResetTrigger("backdashed");
         animator.GetComponent<CharacterMovementAndAnimationsController>().IsBackdashing = false;
     }
 }

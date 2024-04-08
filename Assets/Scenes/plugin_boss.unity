@@ -1407,6 +1407,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eacc8973b76a642940f3b7c5b17ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _simpleMeleeAttackDamage: 5
+  _patternMeleeInitialAttackDamage: 7.5
+  _patternMeleeFinalAttackDamage: 15
+  _simpleRangedProjectileDamage: 5
+  _patternRangedProjectileDamage: 10
+  _areaAttackDamagePerSecond: 2.5
+  _ultimateAttackDamage: 999999
+  _simpleMeleeCooldown: 3
+  _patternMeleeCooldown: 20
+  _simpleRangedCooldown: 10
+  _patternRangedCooldown: 30
+  _areaCooldown: 45
+  _simpleDashCooldown: 15
+  _zigZagDashCooldown: 20
+  _bossMaxHP: 1000
 --- !u!114 &552227237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1426,6 +1441,8 @@ MonoBehaviour:
   _patternRangedSpawnPoint3: {fileID: 207794096}
   _patternRangedSpawnPoint4: {fileID: 1847327656}
   _patternRangedSpawnPoint5: {fileID: 2049478407}
+  _simpleRangedProjectile: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
+  _patternRangedProjectile: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _playerTransform: {fileID: 1188573639}
 --- !u!114 &552227238
 MonoBehaviour:

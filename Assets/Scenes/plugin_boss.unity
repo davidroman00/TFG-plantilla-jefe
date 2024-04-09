@@ -1366,7 +1366,7 @@ CapsuleCollider:
   m_Radius: 1
   m_Height: 4.25
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!54 &552227235
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1420,6 +1420,9 @@ MonoBehaviour:
   _areaCooldown: 45
   _simpleDashCooldown: 15
   _zigZagDashCooldown: 20
+  _meleeMaxDistance: 2
+  _rangedMinDistance: 7
+  _dashMinDistance: 8
   _bossMaxHP: 1000
 --- !u!114 &552227237
 MonoBehaviour:
@@ -1440,8 +1443,8 @@ MonoBehaviour:
   _patternRangedSpawnPoint3: {fileID: 207794096}
   _patternRangedSpawnPoint4: {fileID: 1847327656}
   _patternRangedSpawnPoint5: {fileID: 2049478407}
-  _simpleRangedProjectile: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
-  _patternRangedProjectile: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
+  _simpleRangedProjectile: {fileID: 5296499786381628198, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
+  _patternRangedProjectile: {fileID: 5125689665635281556, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _playerTransform: {fileID: 1188573639}
 --- !u!1 &604362258
 GameObject:
@@ -1767,7 +1770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681489261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22434594, y: 0.000000008383891, z: -0.0000000019300908, w: 0.9745096}
+  m_LocalRotation: {x: 0.22434594, y: -0.000000008383892, z: 0.0000000019300908, w: 0.9745096}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3117,7 +3120,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400907634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22434597, y: 0.000000008383891, z: -0.000000001930091, w: 0.9745096}
+  m_LocalRotation: {x: 0.22434597, y: -0.000000008383892, z: 0.0000000019300912, w: 0.9745096}
   m_LocalPosition: {x: 0, y: 4.5, z: 0.7249999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

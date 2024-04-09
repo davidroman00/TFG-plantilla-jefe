@@ -1284,7 +1284,6 @@ GameObject:
   - component: {fileID: 552227233}
   - component: {fileID: 552227235}
   - component: {fileID: 552227234}
-  - component: {fileID: 552227238}
   - component: {fileID: 552227237}
   - component: {fileID: 552227236}
   m_Layer: 0
@@ -1444,18 +1443,6 @@ MonoBehaviour:
   _simpleRangedProjectile: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
   _patternRangedProjectile: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _playerTransform: {fileID: 1188573639}
---- !u!114 &552227238
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552227230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 024459676c6263b40bb6df2faec472a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &604362258
 GameObject:
   m_ObjectHideFlags: 0

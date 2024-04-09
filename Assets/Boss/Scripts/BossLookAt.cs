@@ -22,6 +22,6 @@ public class BossLookAt : StateMachineBehaviour
         _playerPosition.x = _playerTransform.position.x;
         _playerPosition.z = _playerTransform.position.z;
         Quaternion appliedRotation = Quaternion.LookRotation(_playerPosition, Vector3.up);
-        _bossRigidbody.MoveRotation(appliedRotation);
+        _bossRigidbody.MoveRotation(appliedRotation.normalized);
     }
 }

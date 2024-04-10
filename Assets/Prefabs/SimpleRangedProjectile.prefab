@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3800141639274492424}
   - component: {fileID: 1692641321482544442}
   - component: {fileID: 682013176327076938}
+  - component: {fileID: 4383881799922927535}
   m_Layer: 0
   m_Name: SimpleRangedProjectile
   m_TagString: Untagged
@@ -109,3 +110,15 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &4383881799922927535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984392666180939125}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21af745774f8fed48a2d812d635f2d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

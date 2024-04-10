@@ -23,19 +23,10 @@ public class CharacterHealthManager : MonoBehaviour
         CheckDeath();
     }
 
-    public void CurrentHealthManager(float value)
-    {
-        //esto es por si recibes una heal y tu hp final es mayor al hp maximo
-        /*if (_currentHealth - value > _characterStats.MaxHealth)
-        { 
-            _currentHealth = _characterStats.MaxHealth;
-            _characterHealthUI.SetCurrentHealth(_currentHealth);
-        }
-        else
-        {*/
+    public void PlayerCurrentHealthManager(float value)
+    {        
         _currentHealth -= value;
         _characterHealthUI.SetCurrentHealth(_currentHealth);
-        //}
     }
 
     IEnumerator CheckDeath()
@@ -46,10 +37,5 @@ public class CharacterHealthManager : MonoBehaviour
             yield return new WaitForSeconds(3);
             SceneManager.LoadScene(0);
         }
-    }
-    //usar en caso de querer alterar la maxHealth del personaje de forma dinámica
-    /*public void MaxHealthChange(float value){
-        _characterStats.MaxHealth += value;
-        _characterUIHealth.SetMaxHealth(_characterStats.MaxHealth);
-    }*/
+    }    
 }

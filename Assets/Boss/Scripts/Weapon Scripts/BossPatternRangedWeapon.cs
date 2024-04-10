@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class BossPatternRangedWeapon : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    BossStats _bossStats;
+    void Awake()
     {
-        
+        _bossStats = FindFirstObjectByType<BossStats>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void OnTriggerEnter(Collider collider) {
+        if (this.enabled == true && collider.GetComponent<CharacterHealthManager>()){
+            collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.PatternRangedProjectileDamage);
+        }
     }
 }

@@ -38,6 +38,7 @@ public class BossStats : MonoBehaviour
    float _rangedMinDistance = 7f;
    [SerializeField]
    float _dashMinDistance = 8f;
+   [SerializeField]
    float _bossMovementSpeed = 5;
    [SerializeField]
    float _bossMaxHP = 1000f;
@@ -60,5 +61,5 @@ public class BossStats : MonoBehaviour
    public float RangedMinDistance { get { return _rangedMinDistance; } }
    public float DashMinDistance { get { return _dashMinDistance; } }
    public float BossMovementSpeed { get { return _bossMovementSpeed; } }
-   public float BosMaxHP { get { return _bossMaxHP; } }
+   public float BossMaxHP { get { return _bossMaxHP; } }
 }

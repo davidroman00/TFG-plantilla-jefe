@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class BossPatternRangedWeapon : MonoBehaviour
@@ -8,10 +9,12 @@ public class BossPatternRangedWeapon : MonoBehaviour
     void Awake()
     {
         _bossStats = FindFirstObjectByType<BossStats>();
+        Destroy(gameObject, 10f);
     }
     void OnTriggerEnter(Collider collider) {
-        if (this.enabled == true && collider.GetComponent<CharacterHealthManager>()){
+        if (collider.tag == "Player"){
             collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.PatternRangedProjectileDamage);
         }
+        Destroy(gameObject);
     }
 }

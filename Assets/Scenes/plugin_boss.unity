@@ -1568,7 +1568,7 @@ MonoBehaviour:
   _patternMeleeFinalAttackDamage: 15
   _simpleRangedProjectileDamage: 5
   _patternRangedProjectileDamage: 10
-  _areaAttackDamagePerSecond: 2.5
+  _areaAttackDamagePerSecond: 50
   _ultimateAttackDamage: 999999
   _areaDuration: 15
   _simpleMeleeCooldown: 3
@@ -1960,7 +1960,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681489261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1621687, y: 0.00000000848931, z: -0.0000000013951681, w: 0.98676306}
+  m_LocalRotation: {x: 0.1621687, y: -0.00000000848931, z: 0.0000000013951681, w: 0.98676306}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3344,7 +3344,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400907634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.16216873, y: 0.000000030608643, z: -0.000000005030351, w: 0.98676306}
+  m_LocalRotation: {x: 0.16216873, y: -0.000000030608643, z: 0.000000005030351, w: 0.98676306}
   m_LocalPosition: {x: 0, y: 3.5, z: 0.7249999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

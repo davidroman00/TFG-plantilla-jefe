@@ -37,7 +37,7 @@ public class BossAreaWeapon : MonoBehaviour
     {
         if (_onTrigger)
         {
-            _collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.AreaAttackDamagePerSecond);
+            _collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.AreaAttackDamagePerSecond * Time.deltaTime);
         }
     }   
 }

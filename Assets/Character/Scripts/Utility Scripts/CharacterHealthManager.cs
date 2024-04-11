@@ -20,22 +20,20 @@ public class CharacterHealthManager : MonoBehaviour
     }
     void Update()
     {
-        CheckDeath();
+        if (_currentHealth <= 0)
+        {
+            StartCoroutine(CheckDeath());
+        }
     }
-
+    IEnumerator CheckDeath()
+    {
+        _deathTextUI.SetActive(true);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(0);
+    }
     public void PlayerCurrentHealthManager(float value)
-    {        
+    {
         _currentHealth -= value;
         _characterHealthUI.SetCurrentHealth(_currentHealth);
     }
-
-    IEnumerator CheckDeath()
-    {
-        if (_currentHealth <= 0)
-        {
-            _deathTextUI.SetActive(true);
-            yield return new WaitForSeconds(3);
-            SceneManager.LoadScene(0);
-        }
-    }    
 }

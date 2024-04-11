@@ -11,7 +11,7 @@ public class BossAreaWeapon : MonoBehaviour
     void Awake()
     {
         _bossStats = FindFirstObjectByType<BossStats>();
-        AreaLastsFor();
+        Destroy(gameObject, _bossStats.AreaDuration);
     }
     void Update()
     {
@@ -19,13 +19,19 @@ public class BossAreaWeapon : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider)
     {
-        _onTrigger = true;
-        _collider = collider;
+        if (collider.tag == "Player")
+        {
+            _onTrigger = true;
+            _collider = collider;
+        }
     }
-    void OnTriggerExit()
+    void OnTriggerExit(Collider collider)
     {
-        _onTrigger = false;
-        _collider = null;
+        if (collider.tag == "Player")
+        {
+            _onTrigger = false;
+            _collider = null;
+        }
     }
     void AreaDamageManager()
     {
@@ -33,10 +39,5 @@ public class BossAreaWeapon : MonoBehaviour
         {
             _collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.AreaAttackDamagePerSecond);
         }
-    }
-    IEnumerator AreaLastsFor()
-    {
-        yield return new WaitForSeconds(_bossStats.AreaDuration);
-        Destroy(this);
-    }
+    }   
 }

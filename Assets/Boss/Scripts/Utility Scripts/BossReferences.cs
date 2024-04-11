@@ -5,9 +5,9 @@ using UnityEngine;
 public class BossReferences : MonoBehaviour
 {
     [SerializeField]
-    Transform _simpleRangedSpawnPoint1;
+    Transform _leftSimpleRangedSpawnPoint;
     [SerializeField]
-    Transform _simpleRangedSpawnPoint2;
+    Transform _rightSimpleRangedSpawnPoint;
     [SerializeField]
     Transform _patternRangedSpawnPoint1;
     [SerializeField]
@@ -23,14 +23,28 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     Transform _patternRangedProjectile;
     [SerializeField]
+    Transform _leftAreaSpawnPoint;
+    [SerializeField]
+    Transform _rightAreaSpawnPoint;
+    [SerializeField]
+    GameObject _simpleProjectilePrefab;
+    [SerializeField]
+    GameObject _patternProjectilePrefab;
+    [SerializeField]
+    GameObject _areaPrefab;
+    [SerializeField]
     Transform _playerTransform; 
-    public Transform PlayerTransform {get { return _playerTransform; } }
-    public Transform SimpleRangedSpawnPoint1 { get { return _simpleRangedSpawnPoint1; } }
-    public Transform SimpleRangedSpawnPoint2 { get { return _simpleRangedSpawnPoint2; } }
+    public Transform LeftSimpleRangedSpawnPoint { get { return _leftSimpleRangedSpawnPoint; } }
+    public Transform RightSimpleRangedSpawnPoint { get { return _rightSimpleRangedSpawnPoint; } }
     public Transform PatternRangedSpawnPoint1 { get { return _patternRangedSpawnPoint1; } }
     public Transform PatternRangedSpawnPoint2 { get { return _patternRangedSpawnPoint2; } }
     public Transform PatternRangedSpawnPoint3 { get { return _patternRangedSpawnPoint3; } }
     public Transform PatternRangedSpawnPoint4 { get { return _patternRangedSpawnPoint4; } }
     public Transform PatternRangedSpawnPoint5 { get { return _patternRangedSpawnPoint5; } }
-    
+    public Transform LeftAreaSpawnPoint { get { return _leftAreaSpawnPoint; } }
+    public Transform RightAreaSpawnPoint { get { return _rightAreaSpawnPoint; } }
+    public GameObject SimpleProjectilePrefab { get { return _simpleProjectilePrefab; } }
+    public GameObject PatternProjectilePrefab { get {return _patternProjectilePrefab; } }
+    public GameObject AreaPrefab { get { return _areaPrefab; } }
+    public Transform PlayerTransform {get { return _playerTransform; } }
 }

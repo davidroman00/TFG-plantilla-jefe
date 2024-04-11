@@ -4,30 +4,12 @@ using UnityEngine;
 
 public class BossAnimationEvents : MonoBehaviour
 {
-    [SerializeField]
-    Transform _leftSimpleProjectileSpawnPoint;
-    [SerializeField]
-    Transform _rightSimpleProjectileSpawnPoint;
-    [SerializeField]
-    Transform _patternProjectileSpawnPoint1;
-    [SerializeField]
-    Transform _patternProjectileSpawnPoint2;
-    [SerializeField]
-    Transform _patternProjectileSpawnPoint3;
-    [SerializeField]
-    Transform _patternProjectileSpawnPoint4;
-    [SerializeField]
-    Transform _patternProjectileSpawnPoint5;
-    [SerializeField]
-    Transform _leftAreaSpawnPoint;
-    [SerializeField]
-    Transform _rightAreaSpawnPoint;
-    [SerializeField]
-    GameObject _simpleProjectilePrefab;
-    [SerializeField]
-    GameObject _patternProjectilePrefab;
-    [SerializeField]
-    GameObject _areaPrefab;
+    BossReferences _bossReferences;
+
+    void Awake()
+    {
+        _bossReferences = GetComponent<BossReferences>();
+    }
 
     public void NormalMeleeAttackStart()
     {
@@ -39,41 +21,41 @@ public class BossAnimationEvents : MonoBehaviour
     }
     public void LeftSimpleProjectileSpawn()
     {
-        Instantiate(_simpleProjectilePrefab, _leftSimpleProjectileSpawnPoint);
+        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.LeftSimpleRangedSpawnPoint);
     }
     public void RightSimpleProjectileSpawn()
     {
-        Instantiate(_simpleProjectilePrefab, _rightSimpleProjectileSpawnPoint);
+        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.RightSimpleRangedSpawnPoint);
     }
     public void PatternProjectileSpawn1()
     {
-        Instantiate(_patternProjectilePrefab, _patternProjectileSpawnPoint1);
+        Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint1);
     }
     public void PatternProjectileSpawn2()
     {
-        Instantiate(_patternProjectilePrefab, _patternProjectileSpawnPoint2);
+        Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint2);
     }
     public void PatternProjectileSpawn3()
     {
-        Instantiate(_patternProjectilePrefab, _patternProjectileSpawnPoint3);
+        Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint3);
     }
     public void PatternProjectileSpawn4()
     {
-        Instantiate(_patternProjectilePrefab, _patternProjectileSpawnPoint4);
+        Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint4);
     }
     public void PatternProjectileSpawn5()
     {
-        Instantiate(_patternProjectilePrefab, _patternProjectileSpawnPoint5);
+        Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint5);
     }
     public void AreaSpawn()
     {
         if (Random.value > .5)
         {
-            Instantiate(_areaPrefab, _leftAreaSpawnPoint);
+            Instantiate(_bossReferences.AreaPrefab, _bossReferences.LeftAreaSpawnPoint);
         }
         else
         {
-            Instantiate(_areaPrefab, _rightAreaSpawnPoint);
+            Instantiate(_bossReferences.AreaPrefab, _bossReferences.RightAreaSpawnPoint);
         }
     }
 }

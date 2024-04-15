@@ -20,6 +20,5 @@ public class EnemyHealthManager : MonoBehaviour
     {
         _currentHealth -= value;
         _bossUIHealthManager.SetCurrentHealth(_currentHealth);
-        Debug.Log(_currentHealth);
     }
 }

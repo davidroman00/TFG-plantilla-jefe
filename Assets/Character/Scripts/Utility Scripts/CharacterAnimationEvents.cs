@@ -8,8 +8,4 @@ public class CharacterAnimationEvents : MonoBehaviour
     {
         GetComponentInChildren<WeaponDamageManager>().enabled = true;
     }
-    public void OnMidAttack()
-    {
-        GetComponentInChildren<WeaponDamageManager>().enabled = false;
-    }
 }

@@ -16,6 +16,7 @@ public class WeaponDamageManager : MonoBehaviour
         if (collider.GetComponent<EnemyHealthManager>() && this.enabled)
         {
             collider.GetComponent<EnemyHealthManager>().EnemyRecieveDamage(_characterStats.AttackDamage);
+            this.enabled = false;
         }
     }
 }

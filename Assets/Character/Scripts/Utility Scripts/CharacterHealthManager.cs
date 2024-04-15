@@ -31,7 +31,7 @@ public class CharacterHealthManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         SceneManager.LoadScene(0);
     }
-    public void PlayerCurrentHealthManager(float value)
+    public void PlayerRecieveDamage(float value)
     {
         _currentHealth -= value;
         _characterHealthUI.SetCurrentHealth(_currentHealth);

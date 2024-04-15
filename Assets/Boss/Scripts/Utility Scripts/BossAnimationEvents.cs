@@ -19,6 +19,18 @@ public class BossAnimationEvents : MonoBehaviour
     {
         GetComponentInChildren<BossMeleeWeapon>().enabled = false;
     }
+    public void UltimateAttackStart()
+    {
+        GetComponentInChildren<BossUltimateWeapon>().enabled = true;
+    }
+    public void PatternFinalAttackStart()
+    {
+        GetComponentInChildren<BossBottomWeapon>().enabled = true;
+    }
+    public void PatternFinalAttackEnd()
+    {
+        GetComponentInChildren<BossBottomWeapon>().enabled = false;
+    }
     public void LeftSimpleProjectileSpawn()
     {
         Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.LeftSimpleRangedSpawnPoint);

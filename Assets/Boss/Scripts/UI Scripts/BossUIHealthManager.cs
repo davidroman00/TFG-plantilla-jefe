@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CharacterUIHealthManager : MonoBehaviour
+public class BossUIHealthManager : MonoBehaviour
 {
     Slider _healthSlider;
     void Awake()

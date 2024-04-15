@@ -13,7 +13,7 @@ public class BossPatternRangedWeapon : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider) {
         if (collider.tag == "Player"){
-            collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.PatternRangedProjectileDamage);
+            collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.PatternRangedProjectileDamage);
         }
         Destroy(gameObject);
     }

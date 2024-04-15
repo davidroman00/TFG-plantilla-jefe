@@ -11,7 +11,7 @@ public class BossBottomWeapon : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider) {
         if (this.enabled == true && collider.GetComponent<CharacterHealthManager>()){
-            collider.GetComponent<CharacterHealthManager>().PlayerCurrentHealthManager(_bossStats.PatternMeleeFinalAttackDamage);
+            collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.PatternMeleeFinalAttackDamage);
         }
     }
 }

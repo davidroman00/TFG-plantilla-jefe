@@ -11,25 +11,21 @@ public class BossAnimationEvents : MonoBehaviour
         _bossReferences = GetComponent<BossReferences>();
     }
 
-    public void NormalMeleeAttackStart()
+    public void LeftMeleeAttackStart()
     {
-        GetComponentInChildren<BossMeleeWeapon>().enabled = true;
+        _bossReferences.LeftBossMeleeWeapon.enabled = true;
     }
-    public void NormalMeleeAttackMid()
+    public void RightMeleeAttackStart()
     {
-        GetComponentInChildren<BossMeleeWeapon>().enabled = false;
-    }
-    public void UltimateAttackStart()
-    {
-        GetComponentInChildren<BossUltimateWeapon>().enabled = true;
+        _bossReferences.RightBossMeleeWeapon.enabled = true;
     }
     public void PatternFinalAttackStart()
     {
         GetComponentInChildren<BossBottomWeapon>().enabled = true;
     }
-    public void PatternFinalAttackEnd()
+    public void UltimateAttackStart()
     {
-        GetComponentInChildren<BossBottomWeapon>().enabled = false;
+        GetComponentInChildren<BossUltimateWeapon>().enabled = true;
     }
     public void LeftSimpleProjectileSpawn()
     {

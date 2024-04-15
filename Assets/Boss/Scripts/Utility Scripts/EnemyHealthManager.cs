@@ -8,7 +8,7 @@ public class EnemyHealthManager : MonoBehaviour
     BossStats _bossStats;
     [SerializeField]
     BossUIHealthManager _bossUIHealthManager;
-    void Awake()
+    void Start()//por el orden de ejecución aqui hay que usar start en vez de awake, si no, el script se apaga al comienzo del juego
     {
         _bossStats = GetComponent<BossStats>();
         _currentHealth = _bossStats.BossMaxHP;

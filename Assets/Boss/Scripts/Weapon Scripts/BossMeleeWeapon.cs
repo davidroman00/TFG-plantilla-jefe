@@ -12,6 +12,7 @@ public class BossMeleeWeapon : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if (this.enabled == true && collider.GetComponent<CharacterHealthManager>()){
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.SimpleMeleeAttackDamage);
+            this.enabled = false;
         }
     }
 }

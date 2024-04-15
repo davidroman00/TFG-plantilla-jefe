@@ -10,7 +10,7 @@ public class BossUltimateWeapon : MonoBehaviour
         _bossStats = GetComponentInParent<BossStats>();
     }
     void OnTriggerEnter(Collider collider) {
-        if (this.enabled == true && collider.GetComponent<CharacterHealthManager>()){
+        if (this.enabled && collider.GetComponent<CharacterHealthManager>()){
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.UltimateAttackDamage);
         }
     }

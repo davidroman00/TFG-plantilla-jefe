@@ -18,7 +18,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
     {
         PatternMeleeChecker(animator);
         SimpleMeleeChecker(animator);
-        Debug.Log(!_bossCooldownManager.IsSimpleMeleeOnCooldown());
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

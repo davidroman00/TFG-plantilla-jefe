@@ -9,12 +9,12 @@ public class BossPatternRangedWeapon : MonoBehaviour
     void Awake()
     {
         _bossStats = FindFirstObjectByType<BossStats>();
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 12f);
     }
     void OnTriggerEnter(Collider collider) {
         if (collider.tag == "Player"){
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.PatternRangedProjectileDamage);
-        }
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }        
     }
 }

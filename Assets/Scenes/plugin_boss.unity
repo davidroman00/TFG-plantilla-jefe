@@ -1545,20 +1545,20 @@ MonoBehaviour:
   _areaAttackDamagePerSecond: 15
   _ultimateAttackDamage: 999999
   _areaDuration: 15
-  _simpleMeleeCooldown: 8
-  _patternMeleeCooldown: 10
-  _simpleRangedCooldown: 4
+  _simpleMeleeCooldown: 15
+  _patternMeleeCooldown: 30
+  _simpleRangedCooldown: 7
   _patternRangedCooldown: 30
   _areaCooldown: 45
-  _simpleDashCooldown: 6
-  _zigZagDashCooldown: 5
-  _meleeMaxDistance: 4
-  _rangedMinDistance: 10
+  _simpleDashCooldown: 8
+  _zigZagDashCooldown: 13
+  _meleeMaxDistance: 5
+  _rangedMinDistance: 12
   _dashMinDistance: 7
   _simpleRangedProjectileMovementSpeed: 30
   _patternRangedProjectileMovementSpeed: 2
   _bossMovementSpeed: 5
-  _bossMaxHP: 1000
+  _bossMaxHP: 250
 --- !u!114 &552227237
 MonoBehaviour:
   m_ObjectHideFlags: 0

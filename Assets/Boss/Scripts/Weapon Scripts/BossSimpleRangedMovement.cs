@@ -11,6 +11,6 @@ public class BossSimpleRangedMovement : MonoBehaviour
     }
     void Update()
     {
-        transform.localPosition += Vector3.forward * _bossStats.SimpleRangedProjectileMovementSpeed * Time.deltaTime;
+        transform.Translate(Vector3.forward * _bossStats.SimpleRangedProjectileMovementSpeed * Time.deltaTime);
     }
 }

@@ -13,7 +13,7 @@ public class BossSimpleRangedWeapon : MonoBehaviour
     void OnTriggerEnter(Collider collider) {
         if (collider.tag == "Player"){
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.SimpleRangedProjectileDamage);
+            Destroy(gameObject);
         }
-        Destroy(gameObject);
     }
 }

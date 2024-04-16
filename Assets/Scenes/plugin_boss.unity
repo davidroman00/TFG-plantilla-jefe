@@ -119,6 +119,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &8664596
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8664597}
+  m_Layer: 6
+  m_Name: RightSimpleRangedSpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8664597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8664596}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 474520939}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &30431208
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,7 +387,7 @@ GameObject:
   m_Component:
   - component: {fileID: 187377696}
   m_Layer: 6
-  m_Name: LeftSimpleRanged
+  m_Name: LeftSimpleRangedSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -371,8 +402,8 @@ Transform:
   m_GameObject: {fileID: 187377695}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.5}
-  m_LocalScale: {x: 5, y: 5, z: 2.857143}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2135473533}
@@ -1161,7 +1192,7 @@ Transform:
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.175}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1856088144}
+  - {fileID: 8664597}
   m_Father: {fileID: 1908923022}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &474520940
@@ -1400,7 +1431,7 @@ GameObject:
   - component: {fileID: 552227239}
   m_Layer: 6
   m_Name: BossLogicPhase1
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1511,22 +1542,22 @@ MonoBehaviour:
   _patternMeleeFinalAttackDamage: 15
   _simpleRangedProjectileDamage: 5
   _patternRangedProjectileDamage: 10
-  _areaAttackDamagePerSecond: 50
+  _areaAttackDamagePerSecond: 15
   _ultimateAttackDamage: 999999
   _areaDuration: 15
-  _simpleMeleeCooldown: 6
-  _patternMeleeCooldown: 20
-  _simpleRangedCooldown: 10
+  _simpleMeleeCooldown: 8
+  _patternMeleeCooldown: 10
+  _simpleRangedCooldown: 4
   _patternRangedCooldown: 30
   _areaCooldown: 45
-  _simpleDashCooldown: 15
-  _zigZagDashCooldown: 20
-  _meleeMaxDistance: 2
-  _rangedMinDistance: 7
-  _dashMinDistance: 8
-  _simpleRangedProjectileMovementSpeed: 25
-  _patternRangedProjectileMovementSpeed: 5
-  _bossMovementSpeed: 0
+  _simpleDashCooldown: 6
+  _zigZagDashCooldown: 5
+  _meleeMaxDistance: 4
+  _rangedMinDistance: 10
+  _dashMinDistance: 7
+  _simpleRangedProjectileMovementSpeed: 30
+  _patternRangedProjectileMovementSpeed: 2
+  _bossMovementSpeed: 5
   _bossMaxHP: 1000
 --- !u!114 &552227237
 MonoBehaviour:
@@ -1541,7 +1572,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _leftSimpleRangedSpawnPoint: {fileID: 187377696}
-  _rightSimpleRangedSpawnPoint: {fileID: 1856088144}
+  _rightSimpleRangedSpawnPoint: {fileID: 8664597}
   _patternRangedSpawnPoint1: {fileID: 2095260746}
   _patternRangedSpawnPoint2: {fileID: 1116591010}
   _patternRangedSpawnPoint3: {fileID: 207794096}
@@ -2203,7 +2234,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 1.25
   m_Height: 4.5
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0}
@@ -4974,37 +5005,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1105030301}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1856088143
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1856088144}
-  m_Layer: 6
-  m_Name: RightSimpleRanged
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1856088144
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1856088143}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1.5}
-  m_LocalScale: {x: 5, y: 5, z: 2.857143}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 474520939}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1908923017
 GameObject:

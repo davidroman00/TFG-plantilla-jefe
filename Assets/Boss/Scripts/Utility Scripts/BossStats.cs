@@ -43,7 +43,7 @@ public class BossStats : MonoBehaviour
    [SerializeField]
    float _patternRangedProjectileMovementSpeed = 5f;
    [SerializeField]
-   float _bossMovementSpeed = 5;
+   float _bossMovementSpeed = 5f;
    [SerializeField]
    float _bossMaxHP = 1000f;
 

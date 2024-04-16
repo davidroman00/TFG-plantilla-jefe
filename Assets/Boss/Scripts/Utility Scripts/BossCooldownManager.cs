@@ -13,7 +13,7 @@ public class BossCooldownManager : MonoBehaviour
     float _lastZigZagDash;
     BossStats _bossStats;
     public float LastSimpleMelee { set { _lastSimpleMelee = value; } }
-    public float LastPatternMelee { set { _lastPatternMelee = value;} }
+    public float LastPatternMelee { set { _lastPatternMelee = value; } }
     public float LastSimpleRanged { set { _lastSimpleRanged = value; } }
     public float LastPatternRanged { set { _lastPatternRanged = value; } }
     public float LastArea { set { _lastArea = value; } }
@@ -22,6 +22,10 @@ public class BossCooldownManager : MonoBehaviour
     void Awake()
     {
         _bossStats = GetComponent<BossStats>();
+    }
+    void Update()
+    {
+        Debug.Log(_lastSimpleMelee);
     }
 
     public bool IsSimpleMeleeOnCooldown()
@@ -46,10 +50,10 @@ public class BossCooldownManager : MonoBehaviour
     }
     public bool IsSimpleDashOnCooldown()
     {
-        return Time.time > _lastSimpleDash + _bossStats.SimpleDashCooldown;
+        return Time.time < _lastSimpleDash + _bossStats.SimpleDashCooldown;
     }
     public bool IsZigZagDashOnCooldown()
     {
-        return Time.time > _lastZigZagDash + _bossStats.ZigZagDashCooldown;
+        return Time.time < _lastZigZagDash + _bossStats.ZigZagDashCooldown;
     }
 }

@@ -48,6 +48,7 @@ public class BossAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.RangedMinDistance) && !_bossCooldownManager.IsPatternRangedOnCooldown())
         {
             animator.SetTrigger("rangedPattern");
+            _bossCooldownManager.LastPatternRanged = Time.time;
         }
     }
     void SimpleRangedChecker(Animator animator)
@@ -55,6 +56,7 @@ public class BossAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.RangedMinDistance) && !_bossCooldownManager.IsSimpleMeleeOnCooldown())
         {
             animator.SetTrigger("rangedSimple");
+            _bossCooldownManager.LastSimpleRanged = Time.time;
         }
     }
     void ZigZagDashChecker(Animator animator)
@@ -62,6 +64,7 @@ public class BossAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.DashMinDistance) && !_bossCooldownManager.IsZigZagDashOnCooldown())
         {
             animator.SetTrigger("dashZigZag");
+            _bossCooldownManager.LastZigZagDash = Time.time;
         }
     }
     void SimpleDashChecker(Animator animator)
@@ -69,6 +72,7 @@ public class BossAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.DashMinDistance) && !_bossCooldownManager.IsSimpleDashOnCooldown())
         {
             animator.SetTrigger("dash");
+            _bossCooldownManager.LastSimpleDash = Time.time;
         }
     }
     void AreaChecker(Animator animator)
@@ -76,6 +80,7 @@ public class BossAnimationManager : StateMachineBehaviour
         if (!_bossCooldownManager.IsAreaOnCooldown())
         {
             animator.SetTrigger("area");
+            _bossCooldownManager.LastArea = Time.time;
         }
     }
     void AnyMeleeReadyChecker(Animator animator)

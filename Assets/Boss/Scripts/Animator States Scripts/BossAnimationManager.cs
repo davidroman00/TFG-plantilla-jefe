@@ -20,10 +20,11 @@ public class BossAnimationManager : StateMachineBehaviour
     {
         PhaseChangeChecker(animator);
         PatternRangedChecker(animator);
-        ZigZagDashChecker(animator);
-        AnyMeleeReadyChecker(animator);
-        SimpleDashChecker(animator);
         SimpleRangedChecker(animator);
+        AnyMeleeReadyChecker(animator);
+        ZigZagDashChecker(animator);
+        SimpleDashChecker(animator);
+        BackDashChecker(animator);
         AreaChecker(animator);
     }
 
@@ -33,6 +34,7 @@ public class BossAnimationManager : StateMachineBehaviour
         animator.ResetTrigger("rangedSimple");
         animator.ResetTrigger("dashZigZag");
         animator.ResetTrigger("dash");
+        animator.ResetTrigger("backdash");
         animator.ResetTrigger("area");
         animator.ResetTrigger("phaseChange");
     }
@@ -73,6 +75,14 @@ public class BossAnimationManager : StateMachineBehaviour
         {
             animator.SetTrigger("dash");
             _bossCooldownManager.LastSimpleDash = Time.time;
+        }
+    }
+    void BackDashChecker(Animator animator)
+    {
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.DashMaxDistance) && _bossCooldownManager.IsBackDashOnCooldown() == false)
+        {
+            animator.SetTrigger("backdash");
+            _bossCooldownManager.LastBackDash = Time.time;    
         }
     }
     void AreaChecker(Animator animator)

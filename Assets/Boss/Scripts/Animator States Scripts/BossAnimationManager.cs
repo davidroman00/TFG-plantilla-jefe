@@ -18,14 +18,14 @@ public class BossAnimationManager : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PhaseChangeChecker(animator);
-        PatternRangedChecker(animator);
+        //PhaseChangeChecker(animator);
+        //PatternRangedChecker(animator);
         SimpleRangedChecker(animator);
-        AnyMeleeReadyChecker(animator);
-        ZigZagDashChecker(animator);
-        SimpleDashChecker(animator);
-        BackDashChecker(animator);
-        AreaChecker(animator);
+        //AnyMeleeReadyChecker(animator);
+        //ZigZagDashChecker(animator);
+        //SimpleDashChecker(animator);
+        //BackDashChecker(animator);
+        //AreaChecker(animator);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -47,7 +47,7 @@ public class BossAnimationManager : StateMachineBehaviour
     }
     void PatternRangedChecker(Animator animator)
     {
-        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) < _bossStats.RangedMinDistance) && _bossCooldownManager.IsPatternRangedOnCooldown() == false)
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance) && _bossCooldownManager.IsPatternRangedOnCooldown() == false)
         {
             animator.SetTrigger("rangedPattern");
             _bossCooldownManager.LastPatternRanged = Time.time;
@@ -55,7 +55,8 @@ public class BossAnimationManager : StateMachineBehaviour
     }
     void SimpleRangedChecker(Animator animator)
     {
-        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) < _bossStats.RangedMinDistance) && _bossCooldownManager.IsSimpleMeleeOnCooldown() == false)
+        Debug.Log("Is ditance enough? " + (Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance));
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance) && _bossCooldownManager.IsSimpleMeleeOnCooldown() == false)
         {
             animator.SetTrigger("rangedSimple");
             _bossCooldownManager.LastSimpleRanged = Time.time;
@@ -63,7 +64,7 @@ public class BossAnimationManager : StateMachineBehaviour
     }
     void ZigZagDashChecker(Animator animator)
     {
-        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) < _bossStats.DashMinDistance) && _bossCooldownManager.IsZigZagDashOnCooldown() == false)
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.DashMinDistance) && _bossCooldownManager.IsZigZagDashOnCooldown() == false)
         {
             animator.SetTrigger("dashZigZag");
             _bossCooldownManager.LastZigZagDash = Time.time;
@@ -71,7 +72,7 @@ public class BossAnimationManager : StateMachineBehaviour
     }
     void SimpleDashChecker(Animator animator)
     {
-        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) < _bossStats.DashMinDistance) && _bossCooldownManager.IsSimpleDashOnCooldown() == false)
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.DashMinDistance) && _bossCooldownManager.IsSimpleDashOnCooldown() == false)
         {
             animator.SetTrigger("dash");
             _bossCooldownManager.LastSimpleDash = Time.time;
@@ -79,7 +80,7 @@ public class BossAnimationManager : StateMachineBehaviour
     }
     void BackDashChecker(Animator animator)
     {
-        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) > _bossStats.DashMaxDistance) && _bossCooldownManager.IsBackDashOnCooldown() == false)
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) <= _bossStats.DashMaxDistance) && _bossCooldownManager.IsBackDashOnCooldown() == false)
         {
             animator.SetTrigger("backdash");
             _bossCooldownManager.LastBackDash = Time.time;    

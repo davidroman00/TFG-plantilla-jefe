@@ -25,9 +25,6 @@ public class BossCooldownManager : MonoBehaviour
     {
         _bossStats = GetComponent<BossStats>();
     }
-    void Update(){
-        Debug.Log("Simple anged on CD?: " + IsSimpleRangedOnCooldown());
-    }
     public bool IsSimpleMeleeOnCooldown()
     {
         return Time.time < _lastSimpleMelee + _bossStats.SimpleMeleeCooldown;

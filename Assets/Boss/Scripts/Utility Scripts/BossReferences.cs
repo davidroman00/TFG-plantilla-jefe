@@ -19,10 +19,6 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     Transform _patternRangedSpawnPoint5;
     [SerializeField]
-    Transform _simpleRangedProjectile;
-    [SerializeField]
-    Transform _patternRangedProjectile;
-    [SerializeField]
     Transform _leftAreaSpawnPoint;
     [SerializeField]
     Transform _rightAreaSpawnPoint;

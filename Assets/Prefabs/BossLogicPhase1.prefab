@@ -320,7 +320,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!136 &8332971161796427651
 CapsuleCollider:
@@ -364,8 +364,6 @@ MonoBehaviour:
   _patternRangedSpawnPoint3: {fileID: 626218603411534822}
   _patternRangedSpawnPoint4: {fileID: 3435370387453100026}
   _patternRangedSpawnPoint5: {fileID: 8198894289773905222}
-  _simpleRangedProjectile: {fileID: 5296499786381628198, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
-  _patternRangedProjectile: {fileID: 5125689665635281556, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _leftAreaSpawnPoint: {fileID: 0}
   _rightAreaSpawnPoint: {fileID: 0}
   _simpleProjectilePrefab: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}

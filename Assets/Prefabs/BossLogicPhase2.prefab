@@ -72,8 +72,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7697920486319089062}
   - component: {fileID: 8221467971392267668}
-  - component: {fileID: 4720623682241505017}
   - component: {fileID: 6111353645633701386}
+  - component: {fileID: 7419815429860206119}
   - component: {fileID: 3576561788265950684}
   - component: {fileID: 1272769058851288542}
   - component: {fileID: 1409531681753733944}
@@ -126,7 +126,30 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &4720623682241505017
+--- !u!136 &6111353645633701386
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637206208007451973}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Height: 4.25
+  m_Direction: 1
+  m_Center: {x: 0, y: 2, z: 0}
+--- !u!54 &7419815429860206119
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,29 +176,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!136 &6111353645633701386
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637206208007451973}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1
-  m_Height: 4.25
-  m_Direction: 1
-  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &3576561788265950684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   _patternRangedCooldown: 20
   _areaCooldown: 30
   _simpleDashCooldown: 8
-  _zigZagDashCooldown: 13
+  _zigZagDashCooldown: 0
   _backDashCooldown: 12
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12

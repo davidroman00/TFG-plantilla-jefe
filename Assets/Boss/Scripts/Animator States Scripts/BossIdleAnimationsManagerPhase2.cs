@@ -23,7 +23,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         PatternRangedChecker(animator);
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
-        ZigZagDashChecker(animator);
+        //ZigZagDashChecker(animator);
         SimpleDashChecker(animator);
         BackDashChecker(animator);
         AreaChecker(animator);
@@ -34,7 +34,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
     {
         animator.ResetTrigger("rangedPattern");
         animator.ResetTrigger("rangedSimple");
-        animator.ResetTrigger("dashZigZag");
+        //animator.ResetTrigger("dashZigZag");
         animator.ResetTrigger("dash");
         animator.ResetTrigger("backdash");
         animator.ResetTrigger("area");

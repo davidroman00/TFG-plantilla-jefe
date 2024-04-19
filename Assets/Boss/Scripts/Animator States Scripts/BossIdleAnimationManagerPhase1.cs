@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossAnimationManager : StateMachineBehaviour
+public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 {
     EnemyHealthManager _enemyHealthManager;
     BossStats _bossStats;

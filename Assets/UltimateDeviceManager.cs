@@ -4,8 +4,23 @@ using UnityEngine;
 
 public class UltimateDeviceManager : MonoBehaviour
 {
-    void OnTriggerEnter()
+    bool _isDeviceDestroyed;
+    public bool IsDeviceDestroyed { get { return _isDeviceDestroyed; } }
+    void OnEnable()
     {
+        _isDeviceDestroyed = false;
+    }
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.tag == "Player")
+        {
+            _isDeviceDestroyed = true;
+            StartCoroutine(WaitForDestroy());
+        }
+    }
+    IEnumerator WaitForDestroy()
+    {
+        yield return new WaitForEndOfFrame();//necesario para que le de tiempo al otro script a recibir la data
         Destroy(this.gameObject);
     }
 }

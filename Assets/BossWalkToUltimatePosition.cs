@@ -25,11 +25,12 @@ public class BossWalkToUltimatePosition : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.transform.rotation = Quaternion.identity;
-        Instantiate(_bossReferences.UltimateDevice, _bossReferences.UltimateBossPosition.position, _bossReferences.UltimateBossPosition.rotation);
+        Instantiate(_bossReferences.UltimateDevice, _bossReferences.UltimateDeviceSpawnPoint);
+        animator.transform.LookAt(Vector3.back);
     }
     void BossWalkToPosition(Animator animator)
     {
         animator.transform.position = Vector3.MoveTowards(animator.transform.position, _bossReferences.UltimateBossPosition.position, _bossStats.BossMovementSpeed * Time.deltaTime);
+        animator.transform.LookAt(_bossReferences.UltimateBossPosition.position);
     }
 }

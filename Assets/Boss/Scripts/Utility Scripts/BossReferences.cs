@@ -23,11 +23,17 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     Transform _rightAreaSpawnPoint;
     [SerializeField]
+    Transform _ultimateBossPosition;
+    [SerializeField]
+    Transform _ultimateDeviceSpawnPoint;
+    [SerializeField]
     GameObject _simpleProjectilePrefab;
     [SerializeField]
     GameObject _patternProjectilePrefab;
     [SerializeField]
     GameObject _areaPrefab;
+    [SerializeField]
+    GameObject _ultimateDevice;
     [SerializeField]
     BossMeleeWeapon _rightBossMeleeWeapon;
     [SerializeField]
@@ -43,9 +49,12 @@ public class BossReferences : MonoBehaviour
     public Transform PatternRangedSpawnPoint5 { get { return _patternRangedSpawnPoint5; } }
     public Transform LeftAreaSpawnPoint { get { return _leftAreaSpawnPoint; } }
     public Transform RightAreaSpawnPoint { get { return _rightAreaSpawnPoint; } }
+    public Transform UltimateBossPosition { get { return _ultimateBossPosition; } }
+    public Transform UltimateDeviceSpawnPoint { get {return _ultimateDeviceSpawnPoint; } }
     public GameObject SimpleProjectilePrefab { get { return _simpleProjectilePrefab; } }
     public GameObject PatternProjectilePrefab { get {return _patternProjectilePrefab; } }
     public GameObject AreaPrefab { get { return _areaPrefab; } }
+    public GameObject UltimateDevice { get { return _ultimateDevice; } }
     public BossMeleeWeapon RightBossMeleeWeapon { get { return _rightBossMeleeWeapon; } }
     public BossMeleeWeapon LeftBossMeleeWeapon { get { return _leftBossMeleeWeapon; } }
     public Transform PlayerTransform {get { return _playerTransform; } }

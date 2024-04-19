@@ -49,6 +49,10 @@ public class BossStats : MonoBehaviour
    [SerializeField]
    float _bossMovementSpeed = 5f;
    [SerializeField]
+   int _bossMaxUltimateUses = 1;
+   [SerializeField]
+   float _bossUltimateHPThreshold = 200f;
+   [SerializeField]
    float _bossMaxHP = 1000f;
 
    public float SimpleMeleeAttackDamage { get { return _simpleMeleeAttackDamage; } }
@@ -73,5 +77,7 @@ public class BossStats : MonoBehaviour
    public float SimpleRangedProjectileMovementSpeed { get { return _simpleRangedProjectileMovementSpeed; } }
    public float PatternRangedProjectileMovementSpeed { get { return _patternRangedProjectileMovementSpeed; } }
    public float BossMovementSpeed { get { return _bossMovementSpeed; } }
+   public int BossMaxUltimateUses { get { return _bossMaxUltimateUses; } }
+   public float BossUltimateHPThreshold { get { return _bossUltimateHPThreshold; } }
    public float BossMaxHP { get { return _bossMaxHP; } }
 }

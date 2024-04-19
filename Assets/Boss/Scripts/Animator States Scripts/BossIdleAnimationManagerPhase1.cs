@@ -41,7 +41,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
     {
         if (_enemyHealthManager.CurrentHealth <= 0)
         {
-            animator.SetTrigger("phaseChange");
+            animator.SetBool("walkingToPhaseChange", true);
         }
     }
     void PatternRangedChecker(Animator animator)

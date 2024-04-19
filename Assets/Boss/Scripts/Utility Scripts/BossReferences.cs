@@ -40,6 +40,10 @@ public class BossReferences : MonoBehaviour
     BossMeleeWeapon _leftBossMeleeWeapon;
     [SerializeField]
     Transform _playerTransform; 
+    [SerializeField]
+    GameObject _bossPhase1;
+    [SerializeField]
+    GameObject _bossPhase2;
     public Transform LeftSimpleRangedSpawnPoint { get { return _leftSimpleRangedSpawnPoint; } }
     public Transform RightSimpleRangedSpawnPoint { get { return _rightSimpleRangedSpawnPoint; } }
     public Transform PatternRangedSpawnPoint1 { get { return _patternRangedSpawnPoint1; } }
@@ -57,5 +61,7 @@ public class BossReferences : MonoBehaviour
     public GameObject UltimateDevice { get { return _ultimateDevice; } }
     public BossMeleeWeapon RightBossMeleeWeapon { get { return _rightBossMeleeWeapon; } }
     public BossMeleeWeapon LeftBossMeleeWeapon { get { return _leftBossMeleeWeapon; } }
-    public Transform PlayerTransform {get { return _playerTransform; } }
+    public Transform PlayerTransform { get { return _playerTransform; } }
+    public GameObject BossPhase1 { get { return _bossPhase1; } }
+    public GameObject BossPhase2 { get { return _bossPhase2; } }
 }

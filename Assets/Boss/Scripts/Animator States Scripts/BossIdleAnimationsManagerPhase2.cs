@@ -19,7 +19,6 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PhaseChangeChecker(animator);
         PatternRangedChecker(animator);
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
@@ -38,14 +37,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         animator.ResetTrigger("dash");
         animator.ResetTrigger("backdash");
         animator.ResetTrigger("area");
-    }
-    void PhaseChangeChecker(Animator animator)
-    {
-        if (_enemyHealthManager.CurrentHealth <= 0)
-        {
-            animator.SetTrigger("phaseChange");
-        }
-    }
+    }    
     void PatternRangedChecker(Animator animator)
     {
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance) && !_bossCooldownManager.IsPatternRangedOnCooldown())

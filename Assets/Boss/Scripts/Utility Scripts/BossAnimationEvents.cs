@@ -78,4 +78,9 @@ public class BossAnimationEvents : MonoBehaviour
             Instantiate(_bossReferences.AreaPrefab, _bossReferences.RightAreaSpawnPoint.position, _bossReferences.RightAreaSpawnPoint.rotation);
         }
     }
+    public void PhaseChange()
+    {
+        _bossReferences.BossPhase1.SetActive(false);
+        _bossReferences.BossPhase2.SetActive(true);
+    }
 }

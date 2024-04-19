@@ -206,6 +206,8 @@ MonoBehaviour:
   _rightBossMeleeWeapon: {fileID: 1074875100575130223}
   _leftBossMeleeWeapon: {fileID: 1978870316406465077}
   _playerTransform: {fileID: 0}
+  _bossPhase1: {fileID: 0}
+  _bossPhase2: {fileID: 1637206208007451973}
 --- !u!114 &1272769058851288542
 MonoBehaviour:
   m_ObjectHideFlags: 0

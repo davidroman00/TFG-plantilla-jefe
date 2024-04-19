@@ -697,10 +697,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 741211475}
     - target: {fileID: 895493100799544974, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
-      propertyPath: _bossPhase1
-      value: 
-      objectReference: {fileID: 1949075156}
-    - target: {fileID: 895493100799544974, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
       propertyPath: _bossPhase2
       value: 
       objectReference: {fileID: 421611900795254255}
@@ -3058,7 +3054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529143529}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23527876, y: -0.000000014482857, z: 0.000000003505927, w: 0.97192794}
+  m_LocalRotation: {x: 0.23527877, y: -4.9865994e-17, z: 2.6150183e-17, w: 0.97192794}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4331,10 +4327,6 @@ PrefabInstance:
       propertyPath: _bossPhase1
       value: 
       objectReference: {fileID: 1949075156}
-    - target: {fileID: 3576561788265950684, guid: 7119d1b866d1c4f45be5fb87c11fdbe3, type: 3}
-      propertyPath: _bossPhase2
-      value: 
-      objectReference: {fileID: 421611900795254255}
     - target: {fileID: 3576561788265950684, guid: 7119d1b866d1c4f45be5fb87c11fdbe3, type: 3}
       propertyPath: _playerTransform
       value: 

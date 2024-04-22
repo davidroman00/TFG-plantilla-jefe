@@ -10,7 +10,6 @@ public class BossCooldownManager : MonoBehaviour
     float _lastPatternRanged;
     float _lastArea;
     float _lastSimpleDash;
-    float _lastZigZagDash;
     float _lastBackDash;
     BossStats _bossStats;
     public float LastSimpleMelee { set { _lastSimpleMelee = value; } }
@@ -19,7 +18,6 @@ public class BossCooldownManager : MonoBehaviour
     public float LastPatternRanged { set { _lastPatternRanged = value; } }
     public float LastArea { set { _lastArea = value; } }
     public float LastSimpleDash { set { _lastSimpleDash = value; } }
-    public float LastZigZagDash { set { _lastZigZagDash = value; } }
     public float LastBackDash { set { _lastBackDash = value; } }
     void Awake()
     {
@@ -48,10 +46,6 @@ public class BossCooldownManager : MonoBehaviour
     public bool IsSimpleDashOnCooldown()
     {
         return Time.time < _lastSimpleDash + _bossStats.SimpleDashCooldown;
-    }
-    public bool IsZigZagDashOnCooldown()
-    {
-        return Time.time < _lastZigZagDash + _bossStats.ZigZagDashCooldown;
     }
     public bool IsBackDashOnCooldown()
     {

@@ -31,8 +31,6 @@ public class BossStats : MonoBehaviour
    [SerializeField]
    float _simpleDashCooldown = 15f;
    [SerializeField]
-   float _zigZagDashCooldown = 20f;
-   [SerializeField]
    float _backDashCooldown = 12f;
    [SerializeField]
    float _meleeMaxDistance = 2f;
@@ -68,7 +66,6 @@ public class BossStats : MonoBehaviour
    public float PatternRangedCooldown { get { return _patternRangedCooldown; } }
    public float AreaCooldown { get { return _areaCooldown; } }
    public float SimpleDashCooldown { get { return _simpleDashCooldown; } }
-   public float ZigZagDashCooldown { get { return _zigZagDashCooldown; } }
    public float BackDashCooldown { get { return _backDashCooldown; } }
    public float MeleeMaxDistance { get { return _meleeMaxDistance; } }
    public float RangedMinDistance { get { return _rangedMinDistance; } }

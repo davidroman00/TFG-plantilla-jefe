@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossPatternRangedMovement : MonoBehaviour
 {
-    BossStats _bossStats;
-    BossReferences _bossReferences;
+    BossStatsPhase2 _bossStats;
+    BossReferencesPhase2 _bossReferences;
     void Awake()
     {
-        _bossStats = FindFirstObjectByType<BossStats>();
-        _bossReferences = FindFirstObjectByType<BossReferences>();
+        _bossStats = FindFirstObjectByType<BossStatsPhase2>();
+        _bossReferences = FindFirstObjectByType<BossReferencesPhase2>();
     }
     void Update()
     {

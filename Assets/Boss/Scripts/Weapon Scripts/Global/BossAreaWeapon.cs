@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class BossAreaWeapon : MonoBehaviour
 {
-    BossStats _bossStats;
+    BossStatsPhase2 _bossStats;
     Collider _collider;
     bool _onTrigger;
     void Awake()
     {
-        _bossStats = FindFirstObjectByType<BossStats>();
+        _bossStats = FindFirstObjectByType<BossStatsPhase2>();
         Destroy(gameObject, _bossStats.AreaDuration);
     }
     void Update()

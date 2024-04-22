@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BossWalkToPhaseChange : StateMachineBehaviour
 {
-    BossStats _bossStats;
+    BossStatsPhase1 _bossStats;
     Vector3 _arenaCenter = new Vector3(0, 0, 0);
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _bossStats = animator.GetComponent<BossStats>();
+        _bossStats = animator.GetComponent<BossStatsPhase1>();
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BossWalkToUltimatePosition : StateMachineBehaviour
 {
-    BossReferences _bossReferences;
-    BossStats _bossStats;
+    BossReferencesPhase2 _bossReferences;
+    BossStatsPhase2 _bossStats;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _bossReferences = animator.GetComponent<BossReferences>();
-        _bossStats = animator.GetComponent<BossStats>();
+        _bossReferences = animator.GetComponent<BossReferencesPhase2>();
+        _bossStats = animator.GetComponent<BossStatsPhase2>();
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

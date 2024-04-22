@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
+public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
 {
     EnemyHealthManager _enemyHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
     BossCooldownManager _bossCooldownManager;
+    int _bossActualUltimateUses;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _enemyHealthManager = animator.GetComponent<EnemyHealthManager>();
@@ -18,30 +19,25 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        PhaseChangeChecker(animator);
         PatternRangedChecker(animator);
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
+        //ZigZagDashChecker(animator);
         SimpleDashChecker(animator);
         BackDashChecker(animator);
         AreaChecker(animator);
+        UltimateChecker(animator);
     }
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("rangedPattern");
         animator.ResetTrigger("rangedSimple");
+        //animator.ResetTrigger("dashZigZag");
         animator.ResetTrigger("dash");
         animator.ResetTrigger("backdash");
         animator.ResetTrigger("area");
-    }
-    void PhaseChangeChecker(Animator animator)
-    {
-        if (_enemyHealthManager.CurrentHealth <= 0)
-        {
-            animator.SetBool("walkingToPhaseChange", true);
-        }
-    }
+    }    
     void PatternRangedChecker(Animator animator)
     {
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance) && !_bossCooldownManager.IsPatternRangedOnCooldown())
@@ -56,6 +52,14 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
         {
             animator.SetTrigger("rangedSimple");
             _bossCooldownManager.LastSimpleRanged = Time.time;
+        }
+    }
+    void ZigZagDashChecker(Animator animator)
+    {
+        if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.DashMinDistance) && !_bossCooldownManager.IsZigZagDashOnCooldown())
+        {
+            animator.SetTrigger("dashZigZag");
+            _bossCooldownManager.LastZigZagDash = Time.time;
         }
     }
     void SimpleDashChecker(Animator animator)
@@ -82,6 +86,14 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
             _bossCooldownManager.LastArea = Time.time;
         }
     }
+    void UltimateChecker(Animator animator)
+    {
+        if (_bossActualUltimateUses < _bossStats.BossMaxUltimateUses && _enemyHealthManager.CurrentHealth <= _bossStats.BossUltimateHPThreshold)
+        {
+            animator.SetBool("walkingToUltimate", true);
+            _bossActualUltimateUses++;
+        }
+    }
     void AnyMeleeReadyChecker(Animator animator)
     {
         if (!_bossCooldownManager.IsSimpleMeleeOnCooldown() || !_bossCooldownManager.IsPatternMeleeOnCooldown())
@@ -89,4 +101,5 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
             animator.SetBool("anyMeleeReady", true);
         }
     }
+
 }

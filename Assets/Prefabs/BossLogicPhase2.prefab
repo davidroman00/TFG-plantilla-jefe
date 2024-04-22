@@ -233,8 +233,8 @@ MonoBehaviour:
   _patternRangedCooldown: 20
   _areaCooldown: 30
   _simpleDashCooldown: 8
+  _zigZagDashCooldown: 0
   _backDashCooldown: 12
-  _ultimateCooldown: 60
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12
   _dashMinDistance: 10
@@ -242,7 +242,7 @@ MonoBehaviour:
   _simpleRangedProjectileMovementSpeed: 30
   _patternRangedProjectileMovementSpeed: 2
   _bossMovementSpeed: 5
-  _bossMaxUltimateUses: 2
+  _bossMaxUltimateUses: 1
   _bossUltimateHPThreshold: 200
   _bossMaxHP: 400
 --- !u!114 &1409531681753733944

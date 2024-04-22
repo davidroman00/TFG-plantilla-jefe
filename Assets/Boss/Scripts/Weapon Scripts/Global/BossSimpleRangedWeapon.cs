@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BossSimpleRangedWeapon : MonoBehaviour
 {
-    BossStatsPhase2 _bossStats;
+    BossStats _bossStats;
     void Awake()
     {
-        _bossStats = FindFirstObjectByType<BossStatsPhase2>();
+        _bossStats = FindFirstObjectByType<BossStats>();
         Destroy(gameObject, 2.5f);
     }
     void OnTriggerEnter(Collider collider) {

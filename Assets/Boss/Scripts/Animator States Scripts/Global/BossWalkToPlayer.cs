@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BossWalkToPlayer : StateMachineBehaviour
 {
-    BossStatsPhase2 _bossStats;
+    BossStats _bossStats;
     Transform _playerTransform;
     Vector3 _playerPosition;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _bossStats = animator.GetComponent<BossStatsPhase2>();
-        _playerTransform = animator.GetComponent<BossReferencesPhase2>().PlayerTransform;
+        _bossStats = animator.GetComponent<BossStats>();
+        _playerTransform = animator.GetComponent<BossReferences>().PlayerTransform;
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

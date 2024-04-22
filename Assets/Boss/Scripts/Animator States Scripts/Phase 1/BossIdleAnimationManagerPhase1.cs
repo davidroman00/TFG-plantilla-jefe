@@ -5,15 +5,15 @@ using UnityEngine;
 public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 {
     EnemyHealthManager _enemyHealthManager;
-    BossStatsPhase1 _bossStats;
-    BossReferencesPhase1 _bossReferences;
-    BossCooldownManagerPhase1 _bossCooldownManager;
+    BossStats _bossStats;
+    BossReferences _bossReferences;
+    BossCooldownManager _bossCooldownManager;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _enemyHealthManager = animator.GetComponent<EnemyHealthManager>();
-        _bossStats = animator.GetComponent<BossStatsPhase1>();
-        _bossReferences = animator.GetComponent<BossReferencesPhase1>();
-        _bossCooldownManager = animator.GetComponent<BossCooldownManagerPhase1>();
+        _bossStats = animator.GetComponent<BossStats>();
+        _bossReferences = animator.GetComponent<BossReferences>();
+        _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

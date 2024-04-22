@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BossBottomWeapon : MonoBehaviour
 {
-    BossStatsPhase2 _bossStats;
+    BossStats _bossStats;
     void Awake()
     {
-        _bossStats = GetComponentInParent<BossStatsPhase2>();
+        _bossStats = GetComponentInParent<BossStats>();
     }
     void OnTriggerEnter(Collider collider) {
         if (this.enabled && collider.GetComponent<CharacterHealthManager>()){

@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class BossSimpleRangedMovement : MonoBehaviour
 {
-    BossStatsPhase2 _bossStats;
+    BossStats _bossStats;
     void Awake()
     {
-        _bossStats = FindFirstObjectByType<BossStatsPhase2>();
+        _bossStats = FindFirstObjectByType<BossStats>();
     }
     void Update()
     {

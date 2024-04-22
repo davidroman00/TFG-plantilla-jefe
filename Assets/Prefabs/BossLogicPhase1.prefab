@@ -243,11 +243,11 @@ GameObject:
   - component: {fileID: 3017769748643810034}
   - component: {fileID: 8332971161796427651}
   - component: {fileID: 5754547050279515363}
+  - component: {fileID: 895493100799544974}
+  - component: {fileID: 6720200499942019507}
+  - component: {fileID: 399104513657296241}
   - component: {fileID: 455304870100908013}
-  - component: {fileID: 7011337161212103461}
-  - component: {fileID: 5973057586117799254}
-  - component: {fileID: 5798064977204098664}
-  - component: {fileID: 6985366484462054107}
+  - component: {fileID: 4334288172884152585}
   m_Layer: 6
   m_Name: BossLogicPhase1
   m_TagString: Untagged
@@ -345,20 +345,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
---- !u!114 &455304870100908013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824665530034028264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2a6c4abaa4a005a408adcb733a7eea66, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _bossUIHealthManager: {fileID: 0}
---- !u!114 &7011337161212103461
+--- !u!114 &895493100799544974
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -379,15 +366,18 @@ MonoBehaviour:
   _patternRangedSpawnPoint5: {fileID: 8198894289773905222}
   _leftAreaSpawnPoint: {fileID: 0}
   _rightAreaSpawnPoint: {fileID: 0}
+  _ultimateBossPosition: {fileID: 0}
+  _ultimateDeviceSpawnPoint: {fileID: 0}
   _simpleProjectilePrefab: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
   _patternProjectilePrefab: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _areaPrefab: {fileID: 1889858573898582423, guid: b9c4212df75104e4ba9195d2213cffaf, type: 3}
+  _ultimateDevice: {fileID: 6064615753601011668, guid: e668956b4e685104185cc900df673bb0, type: 3}
   _rightBossMeleeWeapon: {fileID: 5379023115791649191}
   _leftBossMeleeWeapon: {fileID: 9081851558732589890}
   _playerTransform: {fileID: 0}
   _bossPhase1: {fileID: 1824665530034028264}
   _bossPhase2: {fileID: 0}
---- !u!114 &5973057586117799254
+--- !u!114 &6720200499942019507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -399,40 +389,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eacc8973b76a642940f3b7c5b17ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _simpleMeleeAttackDamage: 5
-  _patternMeleeFinalAttackDamage: 15
+  _simpleMeleeAttackDamage: 10
+  _patternMeleeFinalAttackDamage: 18
   _simpleRangedProjectileDamage: 5
   _patternRangedProjectileDamage: 10
-  _areaAttackDamagePerSecond: 2.5
-  _areaDuration: 20
-  _simpleMeleeCooldown: 3
-  _patternMeleeCooldown: 20
-  _simpleRangedCooldown: 10
-  _patternRangedCooldown: 30
-  _areaCooldown: 45
-  _simpleDashCooldown: 15
+  _areaAttackDamagePerSecond: 15
+  _ultimateAttackDamage: 0
+  _areaDuration: 15
+  _simpleMeleeCooldown: 15
+  _patternMeleeCooldown: 30
+  _simpleRangedCooldown: 7
+  _patternRangedCooldown: 20
+  _areaCooldown: 30
+  _simpleDashCooldown: 8
+  _zigZagDashCooldown: 0
   _backDashCooldown: 12
-  _meleeMaxDistance: 2
-  _rangedMinDistance: 7
-  _dashMinDistance: 8
+  _meleeMaxDistance: 4.25
+  _rangedMinDistance: 12
+  _dashMinDistance: 10
   _dashMaxDistance: 6
-  _simpleRangedProjectileMovementSpeed: 25
-  _patternRangedProjectileMovementSpeed: 5
+  _simpleRangedProjectileMovementSpeed: 30
+  _patternRangedProjectileMovementSpeed: 2
   _bossMovementSpeed: 5
-  _bossMaxHP: 1000
---- !u!114 &5798064977204098664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824665530034028264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ae85dbb46b331ae43bd1a15a13288a28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6985366484462054107
+  _bossMaxUltimateUses: 0
+  _bossUltimateHPThreshold: 0
+  _bossMaxHP: 300
+--- !u!114 &399104513657296241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -442,6 +424,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea13d6b476abba84bb95060a1e8334ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &455304870100908013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824665530034028264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6c4abaa4a005a408adcb733a7eea66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bossUIHealthManager: {fileID: 0}
+--- !u!114 &4334288172884152585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824665530034028264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae85dbb46b331ae43bd1a15a13288a28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2720796768322985508

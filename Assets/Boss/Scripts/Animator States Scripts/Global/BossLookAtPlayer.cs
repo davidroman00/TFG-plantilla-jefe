@@ -8,7 +8,7 @@ public class BossLookAtPlayer : StateMachineBehaviour
     Vector3 _playerPosition;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _playerTransform = animator.GetComponent<BossReferencesPhase2>().PlayerTransform;
+        _playerTransform = animator.GetComponent<BossReferences>().PlayerTransform;
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

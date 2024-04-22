@@ -32,6 +32,7 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         }
         animator.ResetTrigger("meleePattern");
         animator.ResetTrigger("meleeSimple");
+        animator.ResetTrigger("dash");
     }
     void PhaseChangeChecker(Animator animator)
     {

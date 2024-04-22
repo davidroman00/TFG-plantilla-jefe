@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossReferences : MonoBehaviour
-{
+{//el hecho de que haya algunos 'none' en el inspector se debe a que, en esa fase, esos objetos no son necesarios
     [SerializeField]
     Transform _leftSimpleRangedSpawnPoint;
     [SerializeField]

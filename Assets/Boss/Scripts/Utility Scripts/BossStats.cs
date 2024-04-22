@@ -3,55 +3,55 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossStats : MonoBehaviour
-{
+{//el hecho de que haya algunos valores a 0 en el inspector se debe a que, en esa fase, son estadisticas que no se necesitan
    [SerializeField]
-   float _simpleMeleeAttackDamage = 5f;
+   float _simpleMeleeAttackDamage;
    [SerializeField]
-   float _patternMeleeFinalAttackDamage = 15f;
+   float _patternMeleeFinalAttackDamage;
    [SerializeField]
-   float _simpleRangedProjectileDamage = 5f;
+   float _simpleRangedProjectileDamage;
    [SerializeField]
-   float _patternRangedProjectileDamage = 10f;
+   float _patternRangedProjectileDamage;
    [SerializeField]
-   float _areaAttackDamagePerSecond = 2.5f;
+   float _areaAttackDamagePerSecond;
    [SerializeField]
-   float _ultimateAttackDamage = 999999f;
+   float _ultimateAttackDamage;
    [SerializeField]
-   float _areaDuration = 20f;
+   float _areaDuration;
    [SerializeField]
-   float _simpleMeleeCooldown = 3f;
+   float _simpleMeleeCooldown;
    [SerializeField]
-   float _patternMeleeCooldown = 20f;
+   float _patternMeleeCooldown;
    [SerializeField]
-   float _simpleRangedCooldown = 10f;
+   float _simpleRangedCooldown;
    [SerializeField]
-   float _patternRangedCooldown = 30f;
+   float _patternRangedCooldown;
    [SerializeField]
-   float _areaCooldown = 45f;
+   float _areaCooldown;
    [SerializeField]
-   float _simpleDashCooldown = 15f;
+   float _simpleDashCooldown;
    [SerializeField]
-   float _backDashCooldown = 12f;
+   float _backDashCooldown;
    [SerializeField]
-   float _meleeMaxDistance = 2f;
+   float _meleeMaxDistance;
    [SerializeField]
-   float _rangedMinDistance = 7f;
+   float _rangedMinDistance;
    [SerializeField]
-   float _dashMinDistance = 8f;
+   float _dashMinDistance;
    [SerializeField]
-   float _dashMaxDistance = 6f;
+   float _dashMaxDistance;
    [SerializeField]
-   float _simpleRangedProjectileMovementSpeed = 25f;
+   float _simpleRangedProjectileMovementSpeed;
    [SerializeField]
-   float _patternRangedProjectileMovementSpeed = 5f;
+   float _patternRangedProjectileMovementSpeed;
    [SerializeField]
-   float _bossMovementSpeed = 5f;
+   float _bossMovementSpeed;
    [SerializeField]
-   int _bossMaxUltimateUses = 1;
+   int _bossMaxUltimateUses;
    [SerializeField]
-   float _bossUltimateHPThreshold = 200f;
+   float _bossUltimateHPThreshold;
    [SerializeField]
-   float _bossMaxHP = 1000f;
+   float _bossMaxHP;
 
    public float SimpleMeleeAttackDamage { get { return _simpleMeleeAttackDamage; } }
    public float PatternMeleeFinalAttackDamage { get { return _patternMeleeFinalAttackDamage; } }

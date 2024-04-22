@@ -712,14 +712,6 @@ PrefabInstance:
       propertyPath: _rightAreaSpawnPoint
       value: 
       objectReference: {fileID: 2103471236}
-    - target: {fileID: 895493100799544974, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
-      propertyPath: _ultimateBossPosition
-      value: 
-      objectReference: {fileID: 12189035}
-    - target: {fileID: 895493100799544974, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
-      propertyPath: _ultimateDeviceSpawnPoint
-      value: 
-      objectReference: {fileID: 175955015}
     - target: {fileID: 1824665530034028264, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
       propertyPath: m_Name
       value: BossLogicPhase1
@@ -1274,7 +1266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681489261}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.20992719, y: -0.000000018808649, z: 0.0000000040384345, w: 0.97771704}
+  m_LocalRotation: {x: 0.20992719, y: 0.000000018808656, z: -0.0000000040384367, w: 0.97771704}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2797,7 +2789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1400907634}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.20992725, y: -0.00000003761731, z: 0.000000008076873, w: 0.97771704}
+  m_LocalRotation: {x: 0.20992725, y: 0.000000037617312, z: -0.000000008076874, w: 0.97771704}
   m_LocalPosition: {x: 0, y: 6, z: -18.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3054,7 +3046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1529143529}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.23527877, y: -4.9865994e-17, z: 2.6150183e-17, w: 0.97192794}
+  m_LocalRotation: {x: 0.23527877, y: 4.9865994e-17, z: -2.6150183e-17, w: 0.97192794}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4115,11 +4107,6 @@ MonoBehaviour:
   m_Damping: 0.35
   m_DampingWhenOccluded: 0.35
   m_OptimalTargetDistance: 0
---- !u!1 &1949075156 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1824665530034028264, guid: 79810a11c77c8c841b551d4aa814ac46, type: 3}
-  m_PrefabInstance: {fileID: 305321865}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1951756106
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,10 +4310,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3576561788265950684, guid: 7119d1b866d1c4f45be5fb87c11fdbe3, type: 3}
-      propertyPath: _bossPhase1
-      value: 
-      objectReference: {fileID: 1949075156}
     - target: {fileID: 3576561788265950684, guid: 7119d1b866d1c4f45be5fb87c11fdbe3, type: 3}
       propertyPath: _playerTransform
       value: 

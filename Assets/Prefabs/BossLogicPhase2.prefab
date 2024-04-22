@@ -207,7 +207,7 @@ MonoBehaviour:
   _leftBossMeleeWeapon: {fileID: 1978870316406465077}
   _playerTransform: {fileID: 0}
   _bossPhase1: {fileID: 0}
-  _bossPhase2: {fileID: 1637206208007451973}
+  _bossPhase2: {fileID: 0}
 --- !u!114 &1272769058851288542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,31 +220,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eacc8973b76a642940f3b7c5b17ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _simpleMeleeAttackDamage: 10
-  _patternMeleeFinalAttackDamage: 18
-  _simpleRangedProjectileDamage: 5
-  _patternRangedProjectileDamage: 10
-  _areaAttackDamagePerSecond: 15
+  _simpleMeleeAttackDamage: 6.5
+  _patternMeleeFinalAttackDamage: 15
+  _simpleRangedProjectileDamage: 6
+  _patternRangedProjectileDamage: 9
+  _areaAttackDamagePerSecond: 16
   _ultimateAttackDamage: 999999
-  _areaDuration: 15
-  _simpleMeleeCooldown: 15
-  _patternMeleeCooldown: 30
-  _simpleRangedCooldown: 7
+  _areaDuration: 22.5
+  _simpleMeleeCooldown: 18
+  _patternMeleeCooldown: 10
+  _simpleRangedCooldown: 3.5
   _patternRangedCooldown: 20
-  _areaCooldown: 30
-  _simpleDashCooldown: 8
-  _zigZagDashCooldown: 0
-  _backDashCooldown: 12
+  _areaCooldown: 22.5
+  _simpleDashCooldown: 4
+  _backDashCooldown: 6
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12
   _dashMinDistance: 10
   _dashMaxDistance: 6
-  _simpleRangedProjectileMovementSpeed: 30
-  _patternRangedProjectileMovementSpeed: 2
-  _bossMovementSpeed: 5
-  _bossMaxUltimateUses: 1
+  _simpleRangedProjectileMovementSpeed: 45
+  _patternRangedProjectileMovementSpeed: 3
+  _bossMovementSpeed: 7.5
+  _bossMaxUltimateUses: 2
   _bossUltimateHPThreshold: 200
-  _bossMaxHP: 400
+  _bossMaxHP: 420
 --- !u!114 &1409531681753733944
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -371,7 +371,7 @@ MonoBehaviour:
   _simpleProjectilePrefab: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
   _patternProjectilePrefab: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _areaPrefab: {fileID: 1889858573898582423, guid: b9c4212df75104e4ba9195d2213cffaf, type: 3}
-  _ultimateDevice: {fileID: 6064615753601011668, guid: e668956b4e685104185cc900df673bb0, type: 3}
+  _ultimateDevice: {fileID: 0}
   _rightBossMeleeWeapon: {fileID: 5379023115791649191}
   _leftBossMeleeWeapon: {fileID: 9081851558732589890}
   _playerTransform: {fileID: 0}
@@ -389,31 +389,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eacc8973b76a642940f3b7c5b17ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _simpleMeleeAttackDamage: 10
-  _patternMeleeFinalAttackDamage: 18
+  _simpleMeleeAttackDamage: 6
+  _patternMeleeFinalAttackDamage: 12
   _simpleRangedProjectileDamage: 5
-  _patternRangedProjectileDamage: 10
-  _areaAttackDamagePerSecond: 15
+  _patternRangedProjectileDamage: 7.5
+  _areaAttackDamagePerSecond: 12
   _ultimateAttackDamage: 0
   _areaDuration: 15
-  _simpleMeleeCooldown: 15
-  _patternMeleeCooldown: 30
-  _simpleRangedCooldown: 7
-  _patternRangedCooldown: 20
-  _areaCooldown: 30
-  _simpleDashCooldown: 8
-  _zigZagDashCooldown: 0
-  _backDashCooldown: 12
+  _simpleMeleeCooldown: 8
+  _patternMeleeCooldown: 20
+  _simpleRangedCooldown: 5
+  _patternRangedCooldown: 25
+  _areaCooldown: 35
+  _simpleDashCooldown: 6.5
+  _backDashCooldown: 10
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12
   _dashMinDistance: 10
   _dashMaxDistance: 6
-  _simpleRangedProjectileMovementSpeed: 30
-  _patternRangedProjectileMovementSpeed: 2
-  _bossMovementSpeed: 5
+  _simpleRangedProjectileMovementSpeed: 35
+  _patternRangedProjectileMovementSpeed: 2.5
+  _bossMovementSpeed: 5.5
   _bossMaxUltimateUses: 0
   _bossUltimateHPThreshold: 0
-  _bossMaxHP: 300
+  _bossMaxHP: 250
 --- !u!114 &399104513657296241
 MonoBehaviour:
   m_ObjectHideFlags: 0

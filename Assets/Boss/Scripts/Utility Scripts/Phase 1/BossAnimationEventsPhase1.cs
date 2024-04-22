@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossAnimationEvents : MonoBehaviour
+public class BossAnimationEventsPhase1 : MonoBehaviour
 {
-    BossReferences _bossReferences;
+    BossReferencesPhase1 _bossReferences;
 
     void Awake()
     {
-        _bossReferences = GetComponent<BossReferences>();
+        _bossReferences = GetComponent<BossReferencesPhase1>();
     }
 
     public void LeftMeleeAttackStart()
@@ -34,10 +34,6 @@ public class BossAnimationEvents : MonoBehaviour
     public void PatternFinalAttackEnd()
     {
         GetComponentInChildren<BossBottomWeapon>().enabled = false;
-    }
-    public void UltimateAttackStart()
-    {
-        GetComponentInChildren<BossUltimateWeapon>().enabled = true;
     }
     public void LeftSimpleProjectileSpawn()
     {

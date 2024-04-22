@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossReferences : MonoBehaviour
+public class BossReferencesPhase2 : MonoBehaviour
 {
     [SerializeField]
     Transform _leftSimpleRangedSpawnPoint;
@@ -39,11 +39,7 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     BossMeleeWeapon _leftBossMeleeWeapon;
     [SerializeField]
-    Transform _playerTransform; 
-    [SerializeField]
-    GameObject _bossPhase1;
-    [SerializeField]
-    GameObject _bossPhase2;
+    Transform _playerTransform;    
     public Transform LeftSimpleRangedSpawnPoint { get { return _leftSimpleRangedSpawnPoint; } }
     public Transform RightSimpleRangedSpawnPoint { get { return _rightSimpleRangedSpawnPoint; } }
     public Transform PatternRangedSpawnPoint1 { get { return _patternRangedSpawnPoint1; } }
@@ -62,6 +58,4 @@ public class BossReferences : MonoBehaviour
     public BossMeleeWeapon RightBossMeleeWeapon { get { return _rightBossMeleeWeapon; } }
     public BossMeleeWeapon LeftBossMeleeWeapon { get { return _leftBossMeleeWeapon; } }
     public Transform PlayerTransform { get { return _playerTransform; } }
-    public GameObject BossPhase1 { get { return _bossPhase1; } }
-    public GameObject BossPhase2 { get { return _bossPhase2; } }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossLookAt : StateMachineBehaviour
+public class BossLookAtPlayer : StateMachineBehaviour
 {
     Transform _playerTransform;
     Vector3 _playerPosition;

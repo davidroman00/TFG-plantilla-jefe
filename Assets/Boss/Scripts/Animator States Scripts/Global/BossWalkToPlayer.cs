@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BossWalk : StateMachineBehaviour
+public class BossWalkToPlayer : StateMachineBehaviour
 {
     BossStats _bossStats;
     Transform _playerTransform;

@@ -8,6 +8,10 @@ public class BackdashStateManager : StateMachineBehaviour
     {
         animator.GetComponent<CharacterMovementAndAnimationsController>().IsBackdashing = true; //para evitar que el pj se mueva durante la animacion
     }
+    override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        //animator.transform.position = Vector3.MoveTowards(animator.transform.position, Vector3.back, Time.deltaTime * 7);
+    }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("backdashed");

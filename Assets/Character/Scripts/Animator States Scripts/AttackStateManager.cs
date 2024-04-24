@@ -12,5 +12,6 @@ public class AttackStateManager : StateMachineBehaviour
     {
         animator.ResetTrigger("attacked");
         animator.GetComponent<CharacterMovementAndAnimationsController>().IsAttacking = false;
+        animator.GetComponentInChildren<WeaponDamageManager>().enabled = false;
     }
 }

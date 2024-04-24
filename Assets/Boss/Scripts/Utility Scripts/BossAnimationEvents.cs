@@ -5,39 +5,36 @@ using UnityEngine;
 public class BossAnimationEvents : MonoBehaviour
 {
     BossReferences _bossReferences;
-
+    BossMeleeWeapon _bossMeleeWeapon;
+    BossUltimateWeapon _bossUltimateWeapon;
     void Awake()
     {
         _bossReferences = GetComponent<BossReferences>();
+        _bossMeleeWeapon = GetComponentInChildren<BossMeleeWeapon>();
+        _bossUltimateWeapon = GetComponentInChildren<BossUltimateWeapon>();
     }
 
-    public void LeftMeleeAttackStart()
+    public void SimpleMeleeAttackStart()
     {
-        _bossReferences.LeftBossMeleeWeapon.enabled = true;
+        _bossMeleeWeapon.enabled = true;
     }
-    public void LeftMeleeAttackMid()
+    public void SimpleMeleeAttackMid()
     {
-        _bossReferences.LeftBossMeleeWeapon.enabled = false;
-    }
-    public void RightMeleeAttackStart()
-    {
-        _bossReferences.RightBossMeleeWeapon.enabled = true;
-    }
-    public void RightMeleeAttackMid()
-    {
-        _bossReferences.RightBossMeleeWeapon.enabled = false;
+        _bossMeleeWeapon.enabled = false;
     }
     public void PatternFinalAttackStart()
     {
-        GetComponentInChildren<BossBottomWeapon>().enabled = true;
+        _bossMeleeWeapon.enabled = true;
+        _bossReferences.IsLastMeleePatternAttack = true;
     }
     public void PatternFinalAttackEnd()
     {
-        GetComponentInChildren<BossBottomWeapon>().enabled = false;
+        _bossMeleeWeapon.enabled = false;
+        _bossReferences.IsLastMeleePatternAttack = false;
     }
     public void UltimateAttackStart()
     {
-        GetComponentInChildren<BossUltimateWeapon>().enabled = true;
+        _bossUltimateWeapon.enabled = true;
     }
     public void LeftSimpleProjectileSpawn()
     {

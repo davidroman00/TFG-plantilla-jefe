@@ -10,6 +10,8 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     public bool IsAttacking { set { _isAttacking = value; } }
     bool _isBackdashing;
     public bool IsBackdashing { set { _isBackdashing = value; } }
+    bool _isActualBackdashActive;
+    public bool IsActualBackdashActive { get { return _isActualBackdashActive; } set { _isActualBackdashActive = value; } }
     float _lastAttackUse;
     float _lastBackdashUse;
     [SerializeField]
@@ -19,12 +21,14 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     CharacterStats _characterStats;
 
     //variables necesarias para el movimiento y las animaciones
-    float _turnSmoothTime = .1f;
+    float _turnSmoothTime = .05f;
     float _turnSmoothVelocity;
     float _horizontalInput;
     float _verticalInput;
     Vector3 _initialDirection;
     Vector3 _moveDirection;
+    Vector3 _backdashMoveDirection;
+    public Vector3 BackdashMoveDirection { get { return _backdashMoveDirection; } } 
     CharacterController _characterController;
     [SerializeField]
     Transform _camera;
@@ -76,6 +80,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
         _moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
+        _backdashMoveDirection = -_moveDirection;
         _characterController.Move(_moveDirection.normalized * _characterStats.MovementSpeed * Time.deltaTime);
     }
     void ShowSkillsCooldownInUI()

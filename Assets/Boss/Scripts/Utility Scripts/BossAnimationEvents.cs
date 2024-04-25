@@ -75,6 +75,22 @@ public class BossAnimationEvents : MonoBehaviour
             Instantiate(_bossReferences.AreaPrefab, _bossReferences.RightAreaSpawnPoint.position, _bossReferences.RightAreaSpawnPoint.rotation);
         }
     }
+    public void ActualBackdashStart()
+    {
+        _bossReferences.IsActualBackdashActive = true;
+    }
+    public void ActualBackdashEnd()
+    {
+        _bossReferences.IsActualBackdashActive = false;
+    }
+    public void ActualDashStart()
+    {
+        _bossReferences.IsActualDashActive = true;
+    }
+    public void ActualDashEnd()
+    {
+        _bossReferences.IsActualDashActive = false;
+    }
     public void PhaseChange()
     {
         _bossReferences.BossPhase1.SetActive(false);

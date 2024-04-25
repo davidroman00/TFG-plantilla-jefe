@@ -31,8 +31,6 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
     {
         animator.ResetTrigger("rangedPattern");
         animator.ResetTrigger("rangedSimple");
-        animator.ResetTrigger("dash");
-        animator.ResetTrigger("backdash");
         animator.ResetTrigger("area");
     }
     void PhaseChangeChecker(Animator animator)

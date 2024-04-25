@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AttackStateManager : StateMachineBehaviour
+public class CharacterAttackStateManager : StateMachineBehaviour
 {   
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

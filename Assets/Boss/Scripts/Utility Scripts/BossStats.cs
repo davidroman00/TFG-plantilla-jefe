@@ -41,6 +41,8 @@ public class BossStats : MonoBehaviour
    [SerializeField]
    float _dashMaxDistance;
    [SerializeField]
+   float _dashMovementSpeed;
+   [SerializeField]
    float _simpleRangedProjectileMovementSpeed;
    [SerializeField]
    float _patternRangedProjectileMovementSpeed;
@@ -71,6 +73,7 @@ public class BossStats : MonoBehaviour
    public float RangedMinDistance { get { return _rangedMinDistance; } }
    public float DashMinDistance { get { return _dashMinDistance; } }
    public float DashMaxDistance { get { return _dashMaxDistance; } }
+   public float DashMovementSpeed { get { return _dashMovementSpeed; } }
    public float SimpleRangedProjectileMovementSpeed { get { return _simpleRangedProjectileMovementSpeed; } }
    public float PatternRangedProjectileMovementSpeed { get { return _patternRangedProjectileMovementSpeed; } }
    public float BossMovementSpeed { get { return _bossMovementSpeed; } }

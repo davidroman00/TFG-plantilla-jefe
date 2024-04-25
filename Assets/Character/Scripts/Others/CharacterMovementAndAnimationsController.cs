@@ -77,7 +77,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     {
         float targetAngle = Mathf.Atan2(_initialDirection.x, _initialDirection.z) * Mathf.Rad2Deg + _camera.eulerAngles.y;
         float angle = Mathf.SmoothDampAngle(transform.eulerAngles.y, targetAngle, ref _turnSmoothVelocity, _turnSmoothTime);
-        transform.rotation = Quaternion.Euler(0f, angle, 0f);
+        transform.rotation = Quaternion.Euler(0, angle, 0);
 
         _moveDirection = Quaternion.Euler(0, targetAngle, 0) * Vector3.forward;
         _backdashMoveDirection = -_moveDirection;

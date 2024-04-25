@@ -41,6 +41,8 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     GameObject _bossPhase2;
     bool _isLastMeleePatternAttack;
+    bool _isActualBackdashActive;
+    bool _isActualDashActive;
     public Transform LeftSimpleRangedSpawnPoint { get { return _leftSimpleRangedSpawnPoint; } }
     public Transform RightSimpleRangedSpawnPoint { get { return _rightSimpleRangedSpawnPoint; } }
     public Transform PatternRangedSpawnPoint1 { get { return _patternRangedSpawnPoint1; } }
@@ -60,4 +62,6 @@ public class BossReferences : MonoBehaviour
     public GameObject BossPhase1 { get { return _bossPhase1; } }
     public GameObject BossPhase2 { get { return _bossPhase2; } }
     public bool IsLastMeleePatternAttack { get { return _isLastMeleePatternAttack; } set { _isLastMeleePatternAttack = value; } }
+    public bool IsActualBackdashActive { get { return _isActualBackdashActive; } set { _isActualBackdashActive = value; } }
+    public bool IsActualDashActive { get { return _isActualDashActive; } set { _isActualDashActive = value; } }
 }

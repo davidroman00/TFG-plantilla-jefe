@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BackdashStateManager : StateMachineBehaviour
+public class CharacterBackdashStateManager : StateMachineBehaviour
 {
     CharacterStats _characterStats;
     CharacterMovementAndAnimationsController _characterMovementAndAnimationsController;

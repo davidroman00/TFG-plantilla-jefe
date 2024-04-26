@@ -30,8 +30,10 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("rangedPattern");
+        animator.ResetTrigger("rangedPatternEnd");
         animator.ResetTrigger("rangedSimple");
         animator.ResetTrigger("area");
+        animator.ResetTrigger("areaEnd");
     }
     void PhaseChangeChecker(Animator animator)
     {

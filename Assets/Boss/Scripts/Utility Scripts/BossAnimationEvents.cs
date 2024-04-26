@@ -7,11 +7,15 @@ public class BossAnimationEvents : MonoBehaviour
     BossReferences _bossReferences;
     BossMeleeWeapon _bossMeleeWeapon;
     BossUltimateWeapon _bossUltimateWeapon;
+    Animator _animator;
+    int _currentRangedPatternLoops;
+    int _currentAreaLoops;
     void Awake()
     {
         _bossReferences = GetComponent<BossReferences>();
         _bossMeleeWeapon = GetComponentInChildren<BossMeleeWeapon>();
         _bossUltimateWeapon = GetComponentInChildren<BossUltimateWeapon>();
+        _animator = GetComponent<Animator>();
     }
 
     public void SimpleMeleeAttackStart()
@@ -44,27 +48,61 @@ public class BossAnimationEvents : MonoBehaviour
     {
         Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.RightSimpleRangedSpawnPoint.position, _bossReferences.RightSimpleRangedSpawnPoint.rotation);
     }
-    public void PatternProjectileSpawn1()
+    public void PatternProjectileSpawnManager()
+    {
+        _currentRangedPatternLoops++;
+        switch (_currentRangedPatternLoops)
+        {
+            case 1:
+                PatternProjectileSpawn1();
+                break;
+            case 2:
+                PatternProjectileSpawn2();
+                break;
+            case 3:
+                PatternProjectileSpawn3();
+                break;
+            case 4:
+                PatternProjectileSpawn4();
+                break;
+            case 5:
+                PatternProjectileSpawn5();
+                _animator.SetTrigger("rangedPatternEnd");
+                _currentRangedPatternLoops = 0;
+                break;
+        }
+    }
+    void PatternProjectileSpawn1()
     {
         Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint1.position, _bossReferences.PatternRangedSpawnPoint1.rotation);
     }
-    public void PatternProjectileSpawn2()
+    void PatternProjectileSpawn2()
     {
         Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint2.position, _bossReferences.PatternRangedSpawnPoint2.rotation);
     }
-    public void PatternProjectileSpawn3()
+    void PatternProjectileSpawn3()
     {
         Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint3.position, _bossReferences.PatternRangedSpawnPoint3.rotation);
     }
-    public void PatternProjectileSpawn4()
+    void PatternProjectileSpawn4()
     {
         Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint4.position, _bossReferences.PatternRangedSpawnPoint4.rotation);
     }
-    public void PatternProjectileSpawn5()
+    void PatternProjectileSpawn5()
     {
         Instantiate(_bossReferences.PatternProjectilePrefab, _bossReferences.PatternRangedSpawnPoint5.position, _bossReferences.PatternRangedSpawnPoint5.rotation);
     }
-    public void AreaSpawn()
+    public void AreaSpawnManager()
+    {
+        _currentAreaLoops++;
+        if (_currentAreaLoops >= 3)
+        {
+            AreaSpawn();
+            _animator.SetTrigger("areaEnd");
+            _currentAreaLoops = 0;
+        }
+    }
+    void AreaSpawn()
     {
         if (Random.value > .5)
         {

@@ -15,13 +15,11 @@ public class BossBackdashMovementManager : StateMachineBehaviour
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (_bossReferences.IsActualBackdashActive)
+        _playerPosition.x = _bossReferences.PlayerTransform.position.x;
+        _playerPosition.z = _bossReferences.PlayerTransform.position.z;
+        if (_bossReferences.IsActualBackdashActive && Vector3.Distance(animator.transform.position, _playerPosition) >= 2f)
         {
-            _playerPosition.x = _bossReferences.PlayerTransform.position.x;
-            _playerPosition.z = _bossReferences.PlayerTransform.position.z;
-
-            animator.transform.position = - Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
-            Debug.Log(animator.transform.position);
+            animator.transform.position = -Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
         }
     }
 

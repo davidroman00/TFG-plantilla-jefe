@@ -10,6 +10,7 @@ public class BossAnimationEvents : MonoBehaviour
     Animator _animator;
     int _currentRangedPatternLoops;
     int _currentAreaLoops;
+    int _currentUltimateBreakLoops;
     void Awake()
     {
         _bossReferences = GetComponent<BossReferences>();
@@ -39,6 +40,15 @@ public class BossAnimationEvents : MonoBehaviour
     public void UltimateAttackStart()
     {
         _bossUltimateWeapon.enabled = true;
+    }
+    public void UltimateBreakManager()
+    {
+        _currentUltimateBreakLoops++;
+        if (_currentUltimateBreakLoops >= 5)
+        {
+            _animator.SetTrigger("ultimateBreakEnd");
+            _currentUltimateBreakLoops = 0;
+        }
     }
     public void LeftSimpleProjectileSpawn()
     {

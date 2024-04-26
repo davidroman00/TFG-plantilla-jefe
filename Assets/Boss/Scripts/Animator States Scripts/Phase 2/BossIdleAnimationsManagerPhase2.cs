@@ -11,7 +11,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
     int _bossActualUltimateUses;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _enemyHealthManager = animator.GetComponent<EnemyHealthManager>();
+        _enemyHealthManager = animator.GetComponentInChildren<EnemyHealthManager>();
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
@@ -23,7 +23,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
         SimpleDashChecker(animator);
-        BackDashChecker(animator);
+        //BackDashChecker(animator);
         AreaChecker(animator);
         UltimateChecker(animator);
     }

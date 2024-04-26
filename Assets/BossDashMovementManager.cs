@@ -20,7 +20,7 @@ public class BossDashMovementManager : StateMachineBehaviour
     {
         _playerPosition.x = _bossReferences.PlayerTransform.position.x;
         _playerPosition.z = _bossReferences.PlayerTransform.position.z;
-        if (_bossReferences.IsActualDashActive && Vector3.Distance(animator.transform.position, _playerPosition) >= 2f)
+        if (_bossReferences.IsActualDashActive && Vector3.Distance(animator.transform.position, _playerPosition) >= 1.75f)
         {
             animator.transform.position = Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
         }

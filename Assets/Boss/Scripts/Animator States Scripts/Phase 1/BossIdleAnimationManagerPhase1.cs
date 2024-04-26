@@ -23,7 +23,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
         SimpleDashChecker(animator);
-        BackDashChecker(animator);
+        //BackDashChecker(animator);
         AreaChecker(animator);
     }
 

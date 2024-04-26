@@ -50,7 +50,7 @@ public class BossAnimationEvents : MonoBehaviour
     }
     public void LeftSimpleProjectileSpawn()
     {
-        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.UltimateWeaponSpawnPoint.position, _bossReferences.UltimateWeaponSpawnPoint.rotation);
+        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.LeftSimpleRangedSpawnPoint.position, _bossReferences.LeftSimpleRangedSpawnPoint.rotation);
     }
     public void RightSimpleProjectileSpawn()
     {

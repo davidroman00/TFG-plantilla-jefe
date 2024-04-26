@@ -21,7 +21,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     CharacterStats _characterStats;
 
     //variables necesarias para el movimiento y las animaciones
-    float _turnSmoothTime = .05f;
+    float _turnSmoothTime = .035f;
     float _turnSmoothVelocity;
     float _horizontalInput;
     float _verticalInput;

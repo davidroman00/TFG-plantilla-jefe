@@ -17,6 +17,8 @@ public class BossStats : MonoBehaviour
    [SerializeField]
    float _ultimateAttackDamage;
    [SerializeField]
+   float _patternRangedProjectileLifetime;
+   [SerializeField]
    float _areaDuration;
    [SerializeField]
    float _simpleMeleeCooldown;
@@ -61,6 +63,7 @@ public class BossStats : MonoBehaviour
    public float PatternRangedProjectileDamage { get { return _patternRangedProjectileDamage; } }
    public float AreaAttackDamagePerSecond { get { return _areaAttackDamagePerSecond; } }
    public float UltimateAttackDamage { get { return _ultimateAttackDamage; } }
+   public float PatternRangedProjectileLifetime { get { return _patternRangedProjectileLifetime; } }
    public float AreaDuration { get { return _areaDuration; } }
    public float SimpleMeleeCooldown { get { return _simpleMeleeCooldown; } }
    public float PatternMeleeCooldown { get { return _patternMeleeCooldown; } }

@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 31793392}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -281,7 +281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31793391}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06081854, y: 0.038020797, z: -0.20263994, w: 0.97662306}
+  m_LocalRotation: {x: 0.022687376, y: 0.02231904, z: -0.007197887, w: 0.9994675}
   m_LocalPosition: {x: 0.009661457, y: 0.06264967, z: 0.008649481}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -298,7 +298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 85233684}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightCape2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 167792860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_Hand_Weapon_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -393,7 +393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 209900959}
   - component: {fileID: 209900960}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Skeleton_01_legs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -661,7 +661,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 232553754}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -676,7 +676,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 232553753}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.004087121, y: -0.0031227402, z: 0.00200069, w: -0.99998486}
+  m_LocalRotation: {x: -0.3880086, y: -0.037330974, z: -0.04499275, w: -0.9197997}
   m_LocalPosition: {x: 0.0034183874, y: -0.036755756, z: -0.0031684148}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -937,7 +937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 280053860}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_BackCloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1044,7 +1044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 291577384}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 291577383}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.07414337, y: -0.025483973, z: 0.038957138, w: -0.9961605}
+  m_LocalRotation: {x: 0.10162426, y: -0.008252981, z: -0.10102331, w: -0.9896457}
   m_LocalPosition: {x: 0.0113180885, y: -0.03802068, z: 0.00014046952}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1075,7 +1075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 343550013}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1090,7 +1090,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343550012}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.1085214, y: -0.019881427, z: 0.04515378, w: 0.99286914}
+  m_LocalRotation: {x: 0.24972132, y: -0.023937415, z: 0.07458731, w: 0.96514404}
   m_LocalPosition: {x: 0.00074991677, y: 0.028182622, z: -0.0102037685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1107,7 +1107,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 352265796}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1122,7 +1122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 352265795}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.096091, y: 0.02018804, z: -0.0028099415, w: 0.99516386}
+  m_LocalRotation: {x: 0.27957767, y: 0.029815076, z: 0.021772983, w: 0.95941305}
   m_LocalPosition: {x: -0.0013015665, y: 0.03672193, z: 0.0035457578}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1172,7 +1172,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 434760502}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Cape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1267,7 +1267,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 514361607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandIndex3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1282,7 +1282,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514361606}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.092329346, y: -0.0199852, z: 0.003308088, w: -0.9955225}
+  m_LocalRotation: {x: -0.27550727, y: -0.029607594, z: -0.021221489, w: -0.9606086}
   m_LocalPosition: {x: 0.0013015487, y: -0.03672191, z: -0.0035456517}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1298,7 +1298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 516573740}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1313,7 +1313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 516573739}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.047756538, y: -0.023894668, z: -0.05075565, w: 0.99728245}
+  m_LocalRotation: {x: 0.31048256, y: 0.0007311106, z: 0.04027018, w: 0.9497254}
   m_LocalPosition: {x: -0.042899624, y: 0.09495044, z: -0.0031275451}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1367,7 +1367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 535675720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Long_Bow_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1505,7 +1505,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 550921872}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1520,7 +1520,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550921871}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.040222496, y: -0.022578746, z: 0.015110895, w: -0.9988213}
+  m_LocalRotation: {x: -0.24579127, y: -0.02480714, z: -0.024615794, w: -0.96869266}
   m_LocalPosition: {x: -0.00096790027, y: -0.042752456, z: 0.0010529351}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1537,7 +1537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 561837299}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Second_Weapon_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1568,7 +1568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 574442818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1583,7 +1583,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 574442817}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.023629148, y: 0.014865542, z: 0.0008647294, w: 0.9996099}
+  m_LocalRotation: {x: 0.4087761, y: 0.037229616, z: 0.05489842, w: 0.91022104}
   m_LocalPosition: {x: -0.0023735214, y: 0.035503164, z: 0.0069762697}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1599,7 +1599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 579199232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1614,7 +1614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 579199231}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.24958324, y: -0.047662735, z: 0.10963883, w: 0.96094525}
+  m_LocalRotation: {x: 0.45158073, y: 0.050533332, z: 0.0034896657, w: 0.89079124}
   m_LocalPosition: {x: -0.00006126892, y: 0.40425304, z: -0.0133414455}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1738,7 +1738,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 618806101}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1753,7 +1753,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618806100}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.12212009, y: 0.010070123, z: 0.000559479, w: -0.9924641}
+  m_LocalRotation: {x: 0.0068912506, y: 0.039975516, z: -0.12520292, w: -0.9913016}
   m_LocalPosition: {x: -0.033899188, y: -0.092781015, z: 0.0056999177}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1878,7 +1878,7 @@ GameObject:
   m_Component:
   - component: {fileID: 634587339}
   - component: {fileID: 634587340}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Skeleton_01_boots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2039,7 +2039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 638008144}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,7 +2054,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638008143}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.09962568, y: 0.010481223, z: -0.012213169, w: 0.99489486}
+  m_LocalRotation: {x: 0.25166038, y: 0.023756292, z: 0.033981767, w: 0.96692705}
   m_LocalPosition: {x: -0.0010686833, y: 0.04306794, z: -0.0011195103}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2110,7 +2110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 656620641}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandMiddle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2125,7 +2125,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656620640}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.011168449, y: -0.015554627, z: -0.002432212, w: -0.9998137}
+  m_LocalRotation: {x: -0.40444344, y: -0.037022524, z: -0.054361016, w: -0.9121951}
   m_LocalPosition: {x: 0.0023735145, y: -0.035503164, z: -0.006976233}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2252,7 +2252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 703599574}
   - component: {fileID: 703599575}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Skeleton_01_head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2537,7 +2537,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 731131700}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2552,7 +2552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731131699}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.048925668, y: -0.0033681914, z: 0.0053187907, w: 0.9987826}
+  m_LocalRotation: {x: 0.34084094, y: 0.032979682, z: 0.055587918, w: 0.9378965}
   m_LocalPosition: {x: -0.0044584237, y: 0.040057987, z: -0.0016473634}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2671,7 +2671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 742199899}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_BackCloth3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2708,13 +2708,13 @@ GameObject:
   - component: {fileID: 743042402}
   - component: {fileID: 743042401}
   - component: {fileID: 743042400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BossLogicPhase2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &743042397
 Transform:
   m_ObjectHideFlags: 0
@@ -2797,6 +2797,7 @@ MonoBehaviour:
   _patternRangedProjectileDamage: 9
   _areaAttackDamagePerSecond: 16
   _ultimateAttackDamage: 999999
+  _patternRangedProjectileLifetime: 12
   _areaDuration: 22.5
   _simpleMeleeCooldown: 18
   _patternMeleeCooldown: 10
@@ -2880,7 +2881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 752907532}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2895,7 +2896,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 752907531}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.016970366, y: 0.019286774, z: -0.08489497, w: 0.99605864}
+  m_LocalRotation: {x: 0.018629448, y: 0.003957913, z: -0.04351004, w: 0.9988715}
   m_LocalPosition: {x: 0.0066638687, y: 0.10554578, z: -0.00647931}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2912,7 +2913,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 776828347}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2927,7 +2928,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776828346}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.014098778, y: 0.034848243, z: 0.020326704, w: -0.99908644}
+  m_LocalRotation: {x: -0.07599403, y: 0.030661829, z: 0.00041520596, w: -0.9966366}
   m_LocalPosition: {x: 0.020498818, y: -0.10116941, z: 0.009757074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3201,7 +3202,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 848322443}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Right_FrontCloth2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3233,7 +3234,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 855153198}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_FrontCloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3265,7 +3266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 869200242}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightCape3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3328,7 +3329,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 893376421}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightCape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3595,7 +3596,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 916404563}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Spine2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3610,7 +3611,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 916404562}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04270635, y: -0.008309825, z: -0.021054192, w: 0.9988313}
+  m_LocalRotation: {x: -0.00085785973, y: -0.0024140922, z: -0.005828082, w: 0.99997973}
   m_LocalPosition: {x: 0, y: 0.11773581, z: -0.0030966867}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3627,7 +3628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 917506961}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftCape2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3659,7 +3660,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 923754412}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3674,7 +3675,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923754411}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.45832458, y: -0.52842754, z: 0.5553832, w: 0.44972497}
+  m_LocalRotation: {x: 0.5873426, y: -0.39210513, z: 0.59449875, w: 0.38451725}
   m_LocalPosition: {x: -0.065679304, y: 0.06552807, z: -0.0067431685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3691,7 +3692,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 932456815}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3706,7 +3707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 932456814}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.019885361, y: 0.20956364, z: 0.08340067, w: 0.9740288}
+  m_LocalRotation: {x: 0.0031179928, y: 0.03498527, z: 0.026888305, w: 0.99902123}
   m_LocalPosition: {x: 0, y: 0.09119421, z: 0.024500813}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3723,7 +3724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 933690108}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3738,7 +3739,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 933690107}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.10876225, y: 0.06149558, z: -0.04077968, w: 0.9913255}
+  m_LocalRotation: {x: -0.04393342, y: 0.009753555, z: -0.22774163, w: 0.9726811}
   m_LocalPosition: {x: -0.0016888957, y: 0.2694026, z: -0.037289087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3758,7 +3759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 962388305}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3773,7 +3774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 962388304}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.059155226, y: -0.14627448, z: 0.11331571, w: 0.98095053}
+  m_LocalRotation: {x: 0.4690041, y: -0.23065883, z: 0.064462595, w: 0.85010374}
   m_LocalPosition: {x: 0.0030670702, y: 0.117158875, z: -0.027578557}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3821,7 +3822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1013745603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3836,7 +3837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1013745602}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.076849736, y: -0.010581753, z: -0.017238675, w: 0.99683756}
+  m_LocalRotation: {x: 0.36222962, y: -0.035786774, z: 0.07517623, w: 0.92836285}
   m_LocalPosition: {x: 0.0017718382, y: 0.024944287, z: -0.0021657897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3852,7 +3853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1021832307}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3867,7 +3868,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1021832306}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0037428117, y: 0.0006153588, z: -0.024869613, w: 0.9996835}
+  m_LocalRotation: {x: -0.055028617, y: -0.0798014, z: -0.013686593, w: 0.99519664}
   m_LocalPosition: {x: -0.0025030226, y: 0.42041975, z: 0.0058467877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3884,7 +3885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1029311604}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightShoulder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3899,7 +3900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029311603}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4168512, y: 0.5865986, z: 0.5505015, w: 0.4231847}
+  m_LocalRotation: {x: -0.38711816, y: 0.5922487, z: 0.39261377, w: 0.58756745}
   m_LocalPosition: {x: 0.065679304, y: 0.06552807, z: -0.0067431685}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4211,7 +4212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1068776958}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4226,7 +4227,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1068776957}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.021408709, y: -0.068610005, z: 0.99520683, w: 0.06631514}
+  m_LocalRotation: {x: -0.03234476, y: 0.02646223, z: 0.9990134, w: 0.015029296}
   m_LocalPosition: {x: 0.073511474, y: -0.0983277, z: -0.010343302}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4246,7 +4247,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1091444269}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4283,7 +4284,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1100261282}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Quiver_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4314,7 +4315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1105587275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Medium_Bow_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4345,7 +4346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1134732105}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandIndex1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4360,7 +4361,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1134732104}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.06319384, y: 0.015181698, z: -0.05579497, w: 0.9963248}
+  m_LocalRotation: {x: 0.013720065, y: -0.025292117, z: 0.07645449, w: 0.9966579}
   m_LocalPosition: {x: 0.0338992, y: 0.09278102, z: -0.0056999214}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4377,7 +4378,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1156993913}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Large_Shield_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4507,7 +4508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1199403255}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightCape4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4538,7 +4539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1208660358}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Right_BackCloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4697,7 +4698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1224178336}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4712,7 +4713,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1224178335}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.22138259, y: 0.17452285, z: -0.09223965, w: 0.9549992}
+  m_LocalRotation: {x: 0.0812446, y: 0.13484304, z: 0.017966328, w: 0.98736715}
   m_LocalPosition: {x: 0.005954231, y: 0.26189435, z: 0.012948303}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4932,7 +4933,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1239307038}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.18457122, y: -0.000000008455379, z: 0.0000000015879009, w: 0.98281914}
+  m_LocalRotation: {x: 0.18457122, y: 0.000000008455383, z: -0.0000000015879019, w: 0.98281914}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4949,7 +4950,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1241098537}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandMiddle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4964,7 +4965,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1241098536}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.081442416, y: -0.011213191, z: 0.00981918, w: -0.99656665}
+  m_LocalRotation: {x: -0.24706137, y: -0.02359441, z: -0.033378005, w: -0.9681373}
   m_LocalPosition: {x: 0.0010686899, y: -0.043067943, z: 0.0011194358}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4981,7 +4982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1264276917}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandThumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4996,7 +4997,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1264276916}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.06291001, y: -0.038838994, z: 0.21346247, w: -0.9741497}
+  m_LocalRotation: {x: -0.03182865, y: -0.026105266, z: 0.05365234, w: -0.9977109}
   m_LocalPosition: {x: -0.009661486, y: -0.062649645, z: -0.008649476}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5014,7 +5015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1282954405}
   - component: {fileID: 1282954406}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Medium_Shield_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5100,7 +5101,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1297121006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_BackCloth2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5133,7 +5134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299113388}
   - component: {fileID: 1299113389}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Skeleton_01_body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5294,7 +5295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1310514730}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Right_FrontCloth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5326,7 +5327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1381115159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Spine3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5341,7 +5342,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381115158}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.17090367, y: -0.032688245, z: -0.08081768, w: 0.9814234}
+  m_LocalRotation: {x: 0.009764016, y: -0.018875822, z: -0.029755577, w: 0.9993313}
   m_LocalPosition: {x: 0, y: 0.09190234, z: -0.012949087}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5670,7 +5671,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420348498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Right_BackCloth3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5732,7 +5733,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1479188559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5747,7 +5748,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479188558}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.21161836, y: -0.24231768, z: 0.20114368, w: -0.92522484}
+  m_LocalRotation: {x: -0.30181268, y: 0.13625938, z: 0.12152694, w: -0.935721}
   m_LocalPosition: {x: -0.039641947, y: -0.03202918, z: -0.017623942}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5764,7 +5765,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1492522104}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Spine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5875,7 +5876,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1536018281}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandMiddle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5890,7 +5891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1536018280}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.08173645, y: 0.0012054668, z: 0.03429458, w: -0.9960631}
+  m_LocalRotation: {x: 0.00028702623, y: 0.02002838, z: -0.02842722, w: -0.9993952}
   m_LocalPosition: {x: -0.006663861, y: -0.105545774, z: 0.006479318}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5907,7 +5908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1558193881}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandIndex2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5922,7 +5923,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1558193880}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.039452657, y: 0.022587255, z: -0.015005022, w: 0.9988535}
+  m_LocalRotation: {x: 0.24992457, y: 0.024824586, z: 0.025195923, w: 0.96761906}
   m_LocalPosition: {x: 0.0009678821, y: 0.04275247, z: -0.0010528234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5939,7 +5940,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1559101678}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandThumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5954,7 +5955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1559101677}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15983069, y: 0.011491138, z: -0.25321648, w: 0.95404595}
+  m_LocalRotation: {x: 0.25376314, y: -0.11542858, z: -0.09021831, w: 0.9561074}
   m_LocalPosition: {x: 0.039641947, y: 0.03202919, z: 0.017623933}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6107,7 +6108,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575539713}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_HeadTopFeathers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6138,7 +6139,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1623054647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Small_Shield_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6169,7 +6170,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1624228668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightToe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6327,7 +6328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634917611}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Neck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6342,7 +6343,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1634917610}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.16710605, y: 0.23893014, z: -0.0036567447, w: 0.956543}
+  m_LocalRotation: {x: 0.054549634, y: -0, z: -0, w: 0.9985111}
   m_LocalPosition: {x: 0, y: 0.13004817, z: -0.0050715553}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6757,7 +6758,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1680423273}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6772,8 +6773,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680423272}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.046021063, y: -0.0567873, z: 0.049090818, w: 0.99611616}
-  m_LocalPosition: {x: 0.053883124, y: 1.0245715, z: 0.090906724}
+  m_LocalRotation: {x: 0.0010560966, y: 0.0021276565, z: -0.0033569254, w: 0.99999154}
+  m_LocalPosition: {x: 0.003880002, y: 1.0256362, z: -0.011037437}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6791,7 +6792,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1685407298}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftUpLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6806,7 +6807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1685407297}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.10833652, y: 0.27797955, z: 0.9539079, w: 0.032408815}
+  m_LocalRotation: {x: 0.01552139, y: 0.10657815, z: 0.9918201, w: 0.068506114}
   m_LocalPosition: {x: -0.073511474, y: -0.0983277, z: -0.011281601}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6972,7 +6973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1707720422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightForeArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6987,7 +6988,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1707720421}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.093871675, y: -0.21655594, z: -0.05997323, w: 0.9698943}
+  m_LocalRotation: {x: -0.04939194, y: 0.0433252, z: -0.25534055, w: 0.96461636}
   m_LocalPosition: {x: 0.0016893707, y: -0.26940337, z: 0.037285015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7004,7 +7005,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1718518187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftToe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7110,7 +7111,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1731358391}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftCape3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7313,7 +7314,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1751927491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightArm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7328,7 +7329,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1751927490}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.058197945, y: -0.28443894, z: 0.30170035, w: 0.9081214}
+  m_LocalRotation: {x: 0.4662071, y: -0.19287007, z: 0.10268611, w: 0.85726756}
   m_LocalPosition: {x: -0.0030670664, y: -0.117158875, z: 0.027578559}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7345,7 +7346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1778040873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftCape4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7377,7 +7378,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1791617385}
   - component: {fileID: 1791617386}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Skeleton_01_gauntlets
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7538,7 +7539,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1816514075}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandThumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7553,7 +7554,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1816514074}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04529413, y: 0.042126738, z: -0.17744435, w: 0.98218495}
+  m_LocalRotation: {x: -0.08514233, y: 0.018796641, z: 0.015978724, w: 0.99606335}
   m_LocalPosition: {x: -0.01131811, y: 0.0380207, z: -0.00014047511}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7569,7 +7570,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827427669}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftLeg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7584,7 +7585,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1827427668}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.021653257, y: -0.20503111, z: 0.027073147, w: 0.97814137}
+  m_LocalRotation: {x: -0.07868459, y: 0.0064244997, z: 0.017517814, w: 0.996725}
   m_LocalPosition: {x: 0.002502678, y: 0.4204556, z: 0.004834262}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7601,7 +7602,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1828188290}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandPinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7616,7 +7617,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828188289}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.09076104, y: 0.013558241, z: -0.0028085115, w: -0.99577653}
+  m_LocalRotation: {x: -0.24518697, y: 0.02381289, z: -0.07365043, w: -0.96638083}
   m_LocalPosition: {x: -0.0007499098, y: -0.02818262, z: 0.010203773}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7636,7 +7637,7 @@ GameObject:
   - component: {fileID: 1839667336}
   - component: {fileID: 1839667335}
   - component: {fileID: 1839667334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7755,7 +7756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1852492214}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandRing1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7770,7 +7771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1852492213}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.1057824, y: -0.010384298, z: -0.12816094, w: 0.98604107}
+  m_LocalRotation: {x: 0.0886831, y: 0.0044201016, z: -0.104368895, w: 0.990567}
   m_LocalPosition: {x: -0.020498825, y: 0.10116948, z: -0.009756941}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7787,7 +7788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1914126648}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightFoot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7802,7 +7803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1914126647}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.11286658, y: -0.055133577, z: -0.08230201, w: 0.9886596}
+  m_LocalRotation: {x: 0.49267873, y: -0.081873305, z: 0.08212382, w: 0.8624501}
   m_LocalPosition: {x: 0.00006047683, y: 0.4042708, z: -0.013081949}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7819,7 +7820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1939797014}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftHandRing3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7834,7 +7835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939797013}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.22716254, y: 0.023053907, z: 0.025254905, w: 0.9732564}
+  m_LocalRotation: {x: 0.39241385, y: 0.037720695, z: 0.04553446, w: 0.91788626}
   m_LocalPosition: {x: -0.0034183885, y: 0.036755774, z: 0.0031684155}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7925,7 +7926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1957602098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7940,7 +7941,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1957602097}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.29316574, y: 0.0627873, z: 0.21321478, w: 0.9298662}
+  m_LocalRotation: {x: 0.06202397, y: 0.12614019, z: 0.076248944, w: 0.9871311}
   m_LocalPosition: {x: -0.0059547164, y: -0.26189452, z: -0.012944151}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7962,7 +7963,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1961179944}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_FrontCloth2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7994,7 +7995,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1980033787}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Sheat_slot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8025,7 +8026,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2002968006}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Left_FrontCloth3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8056,7 +8057,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2025395274}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_LeftCape
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8088,7 +8089,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2027343131}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightBackCloth2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8196,7 +8197,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049002513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandPinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8211,7 +8212,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2049002512}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.03257211, y: 0.013267166, z: 0.007929624, w: -0.9993499}
+  m_LocalRotation: {x: -0.35786697, y: 0.035553426, z: -0.07425684, w: -0.9301361}
   m_LocalPosition: {x: -0.0017718368, y: -0.024944287, z: 0.002165768}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8227,7 +8228,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2059303721}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandPinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8242,7 +8243,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059303720}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.11303818, y: 0.034544047, z: -0.09479855, w: -0.9884545}
+  m_LocalRotation: {x: -0.29552785, y: 0.015650555, z: -0.14806074, w: -0.9436612}
   m_LocalPosition: {x: 0.042899612, y: -0.09495037, z: 0.003127683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -8259,7 +8260,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077942024}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_Right_FrontCloth3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8290,7 +8291,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2094875559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_HeadTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8353,7 +8354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112745855}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PT_Medieval_Male_Armor_RightHandRing2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8368,7 +8369,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2112745854}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.025243431, y: 0.0011541694, z: -0.008426517, w: -0.9996452}
+  m_LocalRotation: {x: -0.3363301, y: -0.032560203, z: -0.0550173, w: -0.9395718}
   m_LocalPosition: {x: 0.004458427, y: -0.040057987, z: 0.0016473588}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -12208,7 +12209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &2694621066218627707
 GameObject:
   m_ObjectHideFlags: 0
@@ -12550,6 +12551,7 @@ MonoBehaviour:
   _patternRangedProjectileDamage: 7.5
   _areaAttackDamagePerSecond: 12
   _ultimateAttackDamage: 0
+  _patternRangedProjectileLifetime: 8
   _areaDuration: 15
   _simpleMeleeCooldown: 8
   _patternMeleeCooldown: 20
@@ -12814,5 +12816,5 @@ SceneRoots:
   - {fileID: 4776210323160403574}
   - {fileID: 250186140}
   - {fileID: 1192039510}
-  - {fileID: 743042397}
   - {fileID: 6735565005972914863}
+  - {fileID: 743042397}

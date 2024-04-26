@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 3800141639274492424}
   - component: {fileID: 1692641321482544442}
   - component: {fileID: 4383881799922927535}
-  - component: {fileID: -7118651319982716242}
   - component: {fileID: 846470907495694508}
   m_Layer: 0
   m_Name: SimpleRangedProjectile
@@ -98,18 +97,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21af745774f8fed48a2d812d635f2d54, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-7118651319982716242
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1984392666180939125}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ac945017b4d55e4a9826fe379341de8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!136 &846470907495694508

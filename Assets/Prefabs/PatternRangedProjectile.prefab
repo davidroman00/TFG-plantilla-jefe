@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 7872120849303508292}
   - component: {fileID: 1479353803292909628}
   - component: {fileID: 516179069650668449}
-  - component: {fileID: -4612549544382945637}
   - component: {fileID: 5897783796538719828}
   m_Layer: 0
   m_Name: PatternRangedProjectile
@@ -98,18 +97,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29d8fe420b93ad54393c2ab58ca90c69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-4612549544382945637
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2407514091668632324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a4f0e5f41e58fdd4eac04b3424684ad9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!135 &5897783796538719828

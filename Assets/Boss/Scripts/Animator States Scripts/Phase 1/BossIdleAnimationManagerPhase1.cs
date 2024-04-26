@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 {
-    EnemyHealthManager _enemyHealthManager;
+    BossHealthManager _enemyHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
     BossCooldownManager _bossCooldownManager;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _enemyHealthManager = animator.GetComponent<EnemyHealthManager>();
+        _enemyHealthManager = animator.GetComponent<BossHealthManager>();
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();

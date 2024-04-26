@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BossMeleeAnimationManager : StateMachineBehaviour
 {
-    BossHealthManager _enemyHealthManager;
+    BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
     BossCooldownManager _bossCooldownManager;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _enemyHealthManager = animator.GetComponentInChildren<BossHealthManager>();
+        _bossHealthManager = animator.GetComponentInChildren<BossHealthManager>();
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
@@ -35,7 +35,7 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
     }
     void PhaseChangeChecker(Animator animator)
     {
-        if (_enemyHealthManager.CurrentHealth <= 0)
+        if (_bossHealthManager.CurrentHealth <= 0)
         {
             animator.SetTrigger("phaseChange");
         }

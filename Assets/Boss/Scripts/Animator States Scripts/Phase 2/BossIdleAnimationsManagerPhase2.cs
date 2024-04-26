@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
 {
-    BossHealthManager _enemyHealthManager;
+    BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
     BossCooldownManager _bossCooldownManager;
     int _bossActualUltimateUses;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _enemyHealthManager = animator.GetComponentInChildren<BossHealthManager>();
+        _bossHealthManager = animator.GetComponentInChildren<BossHealthManager>();
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
@@ -78,7 +78,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
     }
     void UltimateChecker(Animator animator)
     {
-        if (_bossActualUltimateUses < _bossStats.BossMaxUltimateUses && _enemyHealthManager.CurrentHealth <= _bossStats.BossUltimateHPThreshold)
+        if (_bossActualUltimateUses < _bossStats.BossMaxUltimateUses && _bossHealthManager.CurrentHealth <= _bossStats.BossUltimateHPThreshold)
         {
             animator.SetBool("walkingToUltimate", true);
             _bossActualUltimateUses++;

@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 {
-    BossHealthManager _enemyHealthManager;
+    BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
     BossCooldownManager _bossCooldownManager;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        _enemyHealthManager = animator.GetComponent<BossHealthManager>();
+        _bossHealthManager = animator.GetComponentInChildren<BossHealthManager>();
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
@@ -37,7 +37,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
     }
     void PhaseChangeChecker(Animator animator)
     {
-        if (_enemyHealthManager.CurrentHealth <= 0)
+        if (_bossHealthManager.CurrentHealth <= 0)
         {
             animator.SetBool("walkingToPhaseChange", true);
         }

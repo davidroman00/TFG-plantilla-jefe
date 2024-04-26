@@ -6,7 +6,6 @@ public class BossAnimationEvents : MonoBehaviour
 {
     BossReferences _bossReferences;
     BossMeleeWeapon _bossMeleeWeapon;
-    BossUltimateWeapon _bossUltimateWeapon;
     Animator _animator;
     int _currentRangedPatternLoops;
     int _currentAreaLoops;
@@ -15,7 +14,6 @@ public class BossAnimationEvents : MonoBehaviour
     {
         _bossReferences = GetComponent<BossReferences>();
         _bossMeleeWeapon = GetComponentInChildren<BossMeleeWeapon>();
-        _bossUltimateWeapon = GetComponentInChildren<BossUltimateWeapon>();
         _animator = GetComponent<Animator>();
     }
 
@@ -39,7 +37,7 @@ public class BossAnimationEvents : MonoBehaviour
     }
     public void UltimateAttackStart()
     {
-        _bossUltimateWeapon.enabled = true;
+        Instantiate(_bossReferences.UltimateWeaponPrefab, _bossReferences.LeftSimpleRangedSpawnPoint.position, _bossReferences.LeftSimpleRangedSpawnPoint.rotation);
     }
     public void UltimateBreakManager()
     {
@@ -52,7 +50,7 @@ public class BossAnimationEvents : MonoBehaviour
     }
     public void LeftSimpleProjectileSpawn()
     {
-        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.LeftSimpleRangedSpawnPoint.position, _bossReferences.LeftSimpleRangedSpawnPoint.rotation);
+        Instantiate(_bossReferences.SimpleProjectilePrefab, _bossReferences.UltimateWeaponSpawnPoint.position, _bossReferences.UltimateWeaponSpawnPoint.rotation);
     }
     public void RightSimpleProjectileSpawn()
     {

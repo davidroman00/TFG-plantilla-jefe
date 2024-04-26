@@ -25,7 +25,7 @@ public class BossWalkToUltimatePosition : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        Instantiate(_bossReferences.UltimateDevice, _bossReferences.UltimateDeviceSpawnPoint);
+        Instantiate(_bossReferences.UltimateDevicePrefab, _bossReferences.UltimateDeviceSpawnPoint);
         animator.transform.LookAt(Vector3.back);
     }
     void BossWalkToPosition(Animator animator)

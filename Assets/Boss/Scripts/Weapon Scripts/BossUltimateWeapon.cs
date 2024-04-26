@@ -7,10 +7,16 @@ public class BossUltimateWeapon : MonoBehaviour
     BossStats _bossStats;
     void Awake()
     {
-        _bossStats = GetComponentInParent<BossStats>();
+        _bossStats = FindFirstObjectByType<BossStats>();
     }
-    void OnTriggerEnter(Collider collider) {
-        if (this.enabled && collider.GetComponent<CharacterHealthManager>()){
+    void Update()
+    {
+        transform.localScale += new Vector3(60 * Time.deltaTime, 60 * Time.deltaTime , 60 * Time.deltaTime);
+    }
+    void OnTriggerEnter(Collider collider)
+    {
+        if (this.enabled && collider.GetComponent<CharacterHealthManager>())
+        {
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.UltimateAttackDamage);
         }
     }

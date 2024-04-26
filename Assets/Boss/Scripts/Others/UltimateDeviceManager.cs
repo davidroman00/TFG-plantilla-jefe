@@ -6,7 +6,7 @@ public class UltimateDeviceManager : MonoBehaviour
 {
     bool _isDeviceDestroyed;
     public bool IsDeviceDestroyed { get { return _isDeviceDestroyed; } }
-    void OnEnable()
+    void Awake()
     {
         _isDeviceDestroyed = false;
     }

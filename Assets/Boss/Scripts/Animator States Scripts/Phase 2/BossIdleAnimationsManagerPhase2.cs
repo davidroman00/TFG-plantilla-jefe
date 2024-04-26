@@ -23,7 +23,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         SimpleRangedChecker(animator);
         AnyMeleeReadyChecker(animator);
         SimpleDashChecker(animator);
-        //BackDashChecker(animator);
+        //BackdashChecker(animator);
         AreaChecker(animator);
         UltimateChecker(animator);
     }
@@ -60,7 +60,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
             _bossCooldownManager.LastSimpleDash = Time.time;
         }
     }
-    void BackDashChecker(Animator animator)
+    void BackdashChecker(Animator animator)
     {
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) <= _bossStats.DashMaxDistance) && !_bossCooldownManager.IsBackDashOnCooldown())
         {

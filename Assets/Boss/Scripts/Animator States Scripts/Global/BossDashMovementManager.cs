@@ -14,7 +14,7 @@ public class BossDashMovementManager : StateMachineBehaviour
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _rigidbody = animator.GetComponent<Rigidbody>();
-
+        animator.GetComponent<BossCooldownManager>().LastSimpleDash = Time.time;
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

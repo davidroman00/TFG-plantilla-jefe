@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossHealthManager : MonoBehaviour
-{ //podria ser el mismo script de recibir daño en el pj y el boss, pero de esta manera se separa una logica de la otra por si acaso se quiere hacer algo diferente para ambos (formula de recibir daño...)
+{ 
     BossStats _bossStats;
     [SerializeField]
     BossUIHealthManager _bossUIHealthManager;
     float _currentHealth;
     public float CurrentHealth { get { return _currentHealth; } }
-    void Start()//por el orden de ejecución aqui hay que usar start en vez de awake, si no, el script se apaga al comienzo del juego
+    void Start()
+    //Usually, you want to initialize scripts in the Awake() method.
+    //However, due to Unity's execution order, you need to use the Start() method here, so it doesn't crash.
     {
         _bossStats = GetComponentInParent<BossStats>();
         _currentHealth = _bossStats.BossMaxHP;

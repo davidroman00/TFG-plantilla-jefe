@@ -27,6 +27,7 @@ public class BossWalkToUltimatePosition : StateMachineBehaviour
     {
         Instantiate(_bossReferences.UltimateDevicePrefab, _bossReferences.UltimateDeviceSpawnPoint);
         animator.transform.LookAt(Vector3.back);
+        animator.GetComponent<BossCooldownManager>().LastUltimate = Time.time;
     }
     void BossWalkToPosition(Animator animator)
     {

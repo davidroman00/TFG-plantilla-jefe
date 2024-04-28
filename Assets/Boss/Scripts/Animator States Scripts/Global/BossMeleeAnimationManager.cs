@@ -23,16 +23,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         SimpleMeleeChecker(animator);
         SimpleDashChecker(animator);
     }
-
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        if (_bossCooldownManager.IsPatternMeleeOnCooldown() && _bossCooldownManager.IsSimpleMeleeOnCooldown())
-        {
-            animator.SetBool("anyMeleeReady", false);
-        }
-        animator.ResetTrigger("meleePattern");
-        animator.ResetTrigger("meleeSimple");
-    }
     void PhaseChangeChecker(Animator animator)
     {
         if (_bossHealthManager.CurrentHealth <= 0)
@@ -45,7 +35,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) <= _bossStats.MeleeMaxDistance) && !_bossCooldownManager.IsPatternMeleeOnCooldown())
         {
             animator.SetTrigger("meleePattern");
-            _bossCooldownManager.LastPatternMelee = Time.time;
         }
     }
     void SimpleMeleeChecker(Animator animator)
@@ -53,8 +42,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) <= _bossStats.MeleeMaxDistance) && !_bossCooldownManager.IsSimpleMeleeOnCooldown())
         {
             animator.SetTrigger("meleeSimple");
-            _bossCooldownManager.LastSimpleMelee = Time.time;
-
         }
     }
     void SimpleDashChecker(Animator animator)
@@ -62,7 +49,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.DashMinDistance) && !_bossCooldownManager.IsSimpleDashOnCooldown())
         {
             animator.SetTrigger("dash");
-            _bossCooldownManager.LastSimpleDash = Time.time;
         }
     }
 }

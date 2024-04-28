@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class BossUIHealthManager : MonoBehaviour
 {
+    //This script is exactly the same as 'CharaterUIHealthManager'.
+    //However, it is better to keep them as different scripts in case you wanted to alter the boss UI differently as the characters'.
     Slider _healthSlider;
     void Awake()
     {

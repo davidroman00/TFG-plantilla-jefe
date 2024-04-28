@@ -20,7 +20,7 @@ public class UltimateDeviceManager : MonoBehaviour
     }
     IEnumerator WaitForDestroy()
     {
-        yield return new WaitForEndOfFrame();//necesario para que le de tiempo al otro script a recibir la data
+        yield return new WaitForEndOfFrame(); //This line here is needed so Unity has enough time to send the data modifications before this object self destroys
         Destroy(this.gameObject);
     }
 }

@@ -1200,6 +1200,7 @@ MonoBehaviour:
   _areaCooldown: 22.5
   _simpleDashCooldown: 4
   _backDashCooldown: 6
+  _ultimateCooldown: 60
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12
   _dashMinDistance: 10

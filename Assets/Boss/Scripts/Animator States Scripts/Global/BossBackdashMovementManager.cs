@@ -11,6 +11,7 @@ public class BossBackdashMovementManager : StateMachineBehaviour
     {
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
+        animator.GetComponent<BossCooldownManager>().LastBackdash = Time.time;
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)

@@ -25,11 +25,6 @@ public class BossCooldownManager : MonoBehaviour
     {
         _bossStats = GetComponent<BossStats>();
     }
-    void Update()
-    {
-        Debug.Log(IsPatternRangedOnCooldown());
-        Debug.Log(_lastPatternRanged);
-    }
     public bool IsSimpleMeleeOnCooldown()
     {
         return Time.time < _lastSimpleMelee + _bossStats.SimpleMeleeCooldown;

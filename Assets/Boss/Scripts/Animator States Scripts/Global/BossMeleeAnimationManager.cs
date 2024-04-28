@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossMeleeAnimationManager : StateMachineBehaviour
 {
+    //This script handles the movements available while the boss walks towards the character.
     BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
@@ -23,6 +24,7 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         SimpleMeleeChecker(animator);
         SimpleDashChecker(animator);
     }
+    //The conditions behind every movement to trigger.
     void PhaseChangeChecker(Animator animator)
     {
         if (_bossHealthManager.CurrentHealth <= 0)

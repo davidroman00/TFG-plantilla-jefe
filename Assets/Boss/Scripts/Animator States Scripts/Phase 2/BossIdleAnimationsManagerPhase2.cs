@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
 {
+    //This is the core logic of the animator, in the second phase.
     BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
@@ -19,6 +20,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         animator.ResetTrigger("areaEnd");
         animator.ResetTrigger("ultimateBreakEnd");
         animator.ResetTrigger("ultimateBreak");
+        //Resetting triggers, just in case something strange happens. These ones aren't resetted anywhere else.
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -31,6 +33,7 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         AreaChecker(animator);
         UltimateChecker(animator);
     }
+    //The conditions behind every movement to trigger.
     void PatternRangedChecker(Animator animator)
     {
         if ((Vector3.Distance(_bossReferences.PlayerTransform.position, animator.transform.position) >= _bossStats.RangedMinDistance) && !_bossCooldownManager.IsPatternRangedOnCooldown())

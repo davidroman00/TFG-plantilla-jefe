@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
 {
+    //This is the core logic of the animator, in the second phase.
     BossHealthManager _bossHealthManager;
     BossStats _bossStats;
     BossReferences _bossReferences;
@@ -16,6 +17,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
         animator.ResetTrigger("rangedPatternEnd");
         animator.ResetTrigger("areaEnd");
+        //Resetting triggers, just in case something strange happens. These ones aren't resetted anywhere else.
     }
 
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -28,6 +30,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
         BackdashChecker(animator);
         AreaChecker(animator);
     }
+    //The conditions behind every movement to trigger.
     void PhaseChangeChecker(Animator animator)
     {
         if (_bossHealthManager.CurrentHealth <= 0)

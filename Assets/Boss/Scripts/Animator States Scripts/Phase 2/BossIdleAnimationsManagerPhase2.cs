@@ -14,11 +14,6 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         _bossStats = animator.GetComponent<BossStats>();
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
-        animator.ResetTrigger("rangedPatternEnd");
-        animator.ResetTrigger("areaEnd");
-        animator.ResetTrigger("ultimateBreakEnd");
-        animator.ResetTrigger("ultimateBreak");
-        //Resetting triggers, just in case something strange happens. These ones aren't resetted anywhere else.
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
@@ -29,6 +24,20 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         BackdashChecker(animator);
         AreaChecker(animator);
         UltimateChecker(animator);
+    }
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        animator.ResetTrigger("area");
+        animator.ResetTrigger("areaEnd");
+        animator.ResetTrigger("rangedSimple");
+        animator.ResetTrigger("rangedPattern");
+        animator.ResetTrigger("rangedPatternEnd");
+        animator.ResetTrigger("dash");
+        animator.ResetTrigger("backdash");
+        animator.ResetTrigger("ultimateBreakEnd");
+        animator.ResetTrigger("ultimateBreak");
+        //Resetting triggers at the exit of this state is important, so triggers don't stack in the animator while waiting for the current animation to end.
+        //It only happens if two, or more, of them are set at the same time.
     }
     //The conditions behind every movement to trigger.
     void PatternRangedChecker(Animator animator)

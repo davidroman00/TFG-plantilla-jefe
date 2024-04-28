@@ -21,6 +21,14 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         SimpleMeleeChecker(animator);
         SimpleDashChecker(animator);
     }
+    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    {
+        animator.ResetTrigger("meleeSimple");
+        animator.ResetTrigger("meleePattern");
+        animator.ResetTrigger("dash");
+        //Resetting triggers at the exit of this state is important, so triggers don't stack in the animator while waiting for the current animation to end.
+        //It only happens if two, or more, of them are set at the same time.
+    }
     //The conditions behind every movement to trigger.
     void PhaseChangeChecker(Animator animator)
     {

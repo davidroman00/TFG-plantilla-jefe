@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAreaStateManager : StateMachineBehaviour
@@ -8,7 +6,6 @@ public class BossAreaStateManager : StateMachineBehaviour
     {
         animator.GetComponent<BossCooldownManager>().LastArea = Time.time;
     }
-
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("area");

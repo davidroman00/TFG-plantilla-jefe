@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
@@ -22,7 +20,6 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
         animator.ResetTrigger("ultimateBreak");
         //Resetting triggers, just in case something strange happens. These ones aren't resetted anywhere else.
     }
-
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         PatternRangedChecker(animator);
@@ -84,5 +81,4 @@ public class BossIdleAnimationsManagerPhase2 : StateMachineBehaviour
             animator.SetBool("anyMeleeReady", true);
         }
     }
-
 }

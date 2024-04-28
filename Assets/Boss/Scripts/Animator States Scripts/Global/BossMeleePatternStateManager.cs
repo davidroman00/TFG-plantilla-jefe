@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossMeleePatternStateManager : StateMachineBehaviour
@@ -9,7 +7,6 @@ public class BossMeleePatternStateManager : StateMachineBehaviour
     {
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
         _bossCooldownManager.LastPatternMelee = Time.time;
-
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

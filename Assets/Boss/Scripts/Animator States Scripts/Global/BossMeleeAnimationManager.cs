@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossMeleeAnimationManager : StateMachineBehaviour
@@ -16,7 +14,6 @@ public class BossMeleeAnimationManager : StateMachineBehaviour
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossCooldownManager = animator.GetComponent<BossCooldownManager>();
     }
-
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         PhaseChangeChecker(animator);

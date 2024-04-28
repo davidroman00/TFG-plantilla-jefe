@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossRangedSimpleStateManager : StateMachineBehaviour
@@ -8,7 +6,6 @@ public class BossRangedSimpleStateManager : StateMachineBehaviour
     {
         animator.GetComponent<BossCooldownManager>().LastSimpleRanged = Time.time;
     }
-
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("rangedSimple");

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossWalkToCharacter : StateMachineBehaviour
@@ -13,7 +11,6 @@ public class BossWalkToCharacter : StateMachineBehaviour
         _bossStats = animator.GetComponent<BossStats>();
         _playerTransform = animator.GetComponent<BossReferences>().PlayerTransform;
     }
-
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _playerPosition.x = _playerTransform.position.x;

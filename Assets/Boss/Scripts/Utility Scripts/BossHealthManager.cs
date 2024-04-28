@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossHealthManager : MonoBehaviour
@@ -24,11 +22,9 @@ public class BossHealthManager : MonoBehaviour
             GetComponentInParent<Animator>().SetTrigger("death"); 
         }
     }
-
-    public void EnemyRecieveDamage(float value)
+    public void BossRecieveDamage(float value)
     {
         _currentHealth -= value;
         _bossUIHealthManager.SetCurrentHealth(_currentHealth);
-
     }
 }

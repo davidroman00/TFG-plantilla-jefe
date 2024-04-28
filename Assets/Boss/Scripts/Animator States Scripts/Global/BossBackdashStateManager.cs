@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossBackdashStateManager : StateMachineBehaviour
@@ -13,7 +11,6 @@ public class BossBackdashStateManager : StateMachineBehaviour
         _bossReferences = animator.GetComponent<BossReferences>();
         animator.GetComponent<BossCooldownManager>().LastBackdash = Time.time;
     }
-
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _playerPosition.x = _bossReferences.PlayerTransform.position.x;
@@ -25,7 +22,6 @@ public class BossBackdashStateManager : StateMachineBehaviour
             animator.transform.position = Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
         }
     }
-
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("backdash");

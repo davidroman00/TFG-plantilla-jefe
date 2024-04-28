@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossAnimationEvents : MonoBehaviour
@@ -19,7 +17,7 @@ public class BossAnimationEvents : MonoBehaviour
         _animator = GetComponent<Animator>();
     }
 
-    //These are public methods so they can be accessed through an animation event.
+    //These are (mostly) public methods so they can be accessed through an animation event.
     public void SimpleMeleeAttackStart()
     {
         _bossMeleeWeapon.enabled = true;
@@ -115,8 +113,8 @@ public class BossAnimationEvents : MonoBehaviour
     }
     void AreaSpawn()
     {
-        //This way, the side on which the area is placed is selected randomly
         if (Random.value > .5)
+        //This way, the side on which the area is placed is selected randomly
         {
             Instantiate(_bossReferences.AreaPrefab, _bossReferences.LeftAreaSpawnPoint.position, _bossReferences.LeftAreaSpawnPoint.rotation);
         }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossWalkToUltimatePosition : StateMachineBehaviour
@@ -11,7 +9,6 @@ public class BossWalkToUltimatePosition : StateMachineBehaviour
         _bossReferences = animator.GetComponent<BossReferences>();
         _bossStats = animator.GetComponent<BossStats>();
     }
-
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (animator.transform.position != _bossReferences.UltimateBossPosition.position)

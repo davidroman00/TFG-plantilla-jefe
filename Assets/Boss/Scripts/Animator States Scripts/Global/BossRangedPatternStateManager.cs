@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BossRangedPatternStateManager : StateMachineBehaviour
@@ -8,7 +6,6 @@ public class BossRangedPatternStateManager : StateMachineBehaviour
     {
         animator.GetComponent<BossCooldownManager>().LastPatternRanged = Time.time;
     }
-
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("rangedPattern");

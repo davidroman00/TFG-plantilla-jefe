@@ -19,7 +19,7 @@ public class CharacterStats : MonoBehaviour
     float _backdashCooldown;
 
     //This section is in charge of exporting every variable in ReadOnly, thanks to the getter.
-    //If you wan to modify this variables dynamically, you need a setter instead.
+    //If you want to modify these variables dynamically, you need a setter instead.
     public float MaxHealth { get { return _maxHealth; } }
     public float MovementSpeed { get { return _movementSpeed; } }
     public float BackdashMovementSpeed { get { return _backdashMovementSpeed; } }

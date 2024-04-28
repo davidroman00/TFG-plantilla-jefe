@@ -15,10 +15,12 @@ public class BossPatternRangedProjectile : MonoBehaviour
     }
     void Update()
     {
+        //This object moves towards the player.
         transform.position = Vector3.MoveTowards(transform.position, _bossReferences.PlayerTransform.position, _bossStats.PatternRangedProjectileMovementSpeed * Time.deltaTime);
     }
     void OnTriggerEnter(Collider collider) {
-        if (collider.tag == "Player"){
+        if (collider.CompareTag("Player"))
+        {
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.PatternRangedProjectileDamage);
             Destroy(gameObject);
         }        

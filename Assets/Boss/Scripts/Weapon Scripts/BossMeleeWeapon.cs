@@ -5,17 +5,16 @@ using UnityEngine;
 public class BossMeleeWeapon : MonoBehaviour
 {
     BossStats _bossStats;
-    BossReferences _bossReferences;
     void Awake()
     {
         _bossStats = GetComponentInParent<BossStats>();
-        _bossReferences = GetComponentInParent<BossReferences>();
     }
     void OnTriggerEnter(Collider collider)
     {
-        if (this.enabled == true && collider.GetComponent<CharacterHealthManager>())
+        if (this.enabled == true && collider.CompareTag("Player"))
         {
-            if (_bossReferences.IsLastMeleePatternAttack)
+            //Since this script is in charge of handling all melee attacks, you need to check first which attack is actually being played, so it deals the correct amount of damage.
+            if (_bossStats.IsLastMeleePatternAttack)
             {
                 collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.PatternMeleeFinalAttackDamage);
             }
@@ -24,6 +23,8 @@ public class BossMeleeWeapon : MonoBehaviour
                 collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.SimpleMeleeAttackDamage);
             }
             this.enabled = false;
+            //Disabling this script is necessary in order to deal damage only once per attack.
+            //This is enabled through animation events, check the script 'BossAnimationEvents.cs' and the relative animations to learn more.
         }
     }
 }

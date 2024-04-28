@@ -1076,7 +1076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4508418374462826701
 Transform:
   m_ObjectHideFlags: 0
@@ -1191,6 +1191,7 @@ MonoBehaviour:
   _areaAttackDamagePerSecond: 16
   _ultimateAttackDamage: 999999
   _patternRangedProjectileLifetime: 12
+  _simpleRangedProjectileLifetime: 2.5
   _areaDuration: 22.5
   _simpleMeleeCooldown: 18
   _patternMeleeCooldown: 10
@@ -1209,7 +1210,7 @@ MonoBehaviour:
   _bossMovementSpeed: 7.5
   _bossMaxUltimateUses: 2
   _bossUltimateHPThreshold: 200
-  _bossMaxHP: 420
+  _bossMaxHP: 400
 --- !u!114 &6301858517436652664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4096,7 +4097,7 @@ GameObject:
   - component: {fileID: 6676272425969934516}
   - component: {fileID: 5240816348260580268}
   m_Layer: 6
-  m_Name: BossCollisionsManager
+  m_Name: BossCollisionsManagerPhase2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -5,6 +5,7 @@ using UnityEngine;
 public class BossAnimationEvents : MonoBehaviour
 {
     BossReferences _bossReferences;
+    BossStats _bossStats;
     BossMeleeWeapon _bossMeleeWeapon;
     Animator _animator;
     int _currentRangedPatternLoops;
@@ -13,6 +14,7 @@ public class BossAnimationEvents : MonoBehaviour
     void Awake()
     {
         _bossReferences = GetComponent<BossReferences>();
+        _bossStats = GetComponent<BossStats>();
         _bossMeleeWeapon = GetComponentInChildren<BossMeleeWeapon>();
         _animator = GetComponent<Animator>();
     }
@@ -28,12 +30,12 @@ public class BossAnimationEvents : MonoBehaviour
     public void PatternFinalAttackStart()
     {
         _bossMeleeWeapon.enabled = true;
-        _bossReferences.IsLastMeleePatternAttack = true;
+        _bossStats.IsLastMeleePatternAttack = true;
     }
     public void PatternFinalAttackEnd()
     {
         _bossMeleeWeapon.enabled = false;
-        _bossReferences.IsLastMeleePatternAttack = false;
+        _bossStats.IsLastMeleePatternAttack = false;
     }
     public void UltimateAttackStart()
     {
@@ -123,19 +125,19 @@ public class BossAnimationEvents : MonoBehaviour
     }
     public void ActualBackdashStart()
     {
-        _bossReferences.IsActualBackdashActive = true;
+        _bossStats.IsActualBackdashActive = true;
     }
     public void ActualBackdashEnd()
     {
-        _bossReferences.IsActualBackdashActive = false;
+        _bossStats.IsActualBackdashActive = false;
     }
     public void ActualDashStart()
     {
-        _bossReferences.IsActualDashActive = true;
+        _bossStats.IsActualDashActive = true;
     }
     public void ActualDashEnd()
     {
-        _bossReferences.IsActualDashActive = false;
+        _bossStats.IsActualDashActive = false;
     }
     public void PhaseChange()
     {

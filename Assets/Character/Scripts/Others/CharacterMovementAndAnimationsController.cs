@@ -18,7 +18,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
     CharacterStats _characterStats;
 
     //Necessary variables to handle movement, rotation and animations.
-    float _turnSmoothTime = .05f;
+    float _turnSmoothTime = .075f;
     float _turnSmoothVelocity;
     float _targetAngle;
     float _appliedAngle;
@@ -69,14 +69,14 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
         {
             _animator.SetBool("isWalking", false);
         }
-        if (Input.GetKeyDown("space") && !IsBackdashOnCooldown())
+        if (Input.GetKeyDown(KeyCode.Space) && !IsBackdashOnCooldown())
         {
-            _animator.SetTrigger("backdashed");
+            _animator.SetTrigger("backdash");
             _lastBackdashUse = Time.time;
         }
         if (Input.GetMouseButtonDown(0) && !IsAttackOnCooldown())
         {
-            _animator.SetTrigger("attacked");
+            _animator.SetTrigger("attack");
             _lastAttackUse = Time.time;
         }
     }
@@ -89,7 +89,7 @@ public class CharacterMovementAndAnimationsController : MonoBehaviour
 
         //Handling character movement.
         _moveDirection = Quaternion.Euler(0, _targetAngle, 0) * Vector3.forward;
-        _characterController.Move(_moveDirection.normalized * _characterStats.MovementSpeed * Time.deltaTime);
+        _characterController.Move(_characterStats.MovementSpeed * Time.deltaTime * _moveDirection.normalized);
 
         _backdashMoveDirection = Quaternion.Euler(0, _appliedAngle, 0) * Vector3.back;
     }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossReferences : MonoBehaviour
-{//el hecho de que haya algunos 'none' en el inspector se debe a que, en esa fase, esos objetos no son necesarios
+{
+    //Here, there are stored and exported every object required for the boss to operate correctly.
+    //The fact that there are some values at 'none' on inspector means they are not necessary for the current phase of the boss.    
     [SerializeField]
     Transform _leftSimpleRangedSpawnPoint;
     [SerializeField]
@@ -44,9 +46,7 @@ public class BossReferences : MonoBehaviour
     GameObject _bossPhase1;
     [SerializeField]
     GameObject _bossPhase2;
-    bool _isLastMeleePatternAttack;
-    bool _isActualBackdashActive;
-    bool _isActualDashActive;
+
     public Transform LeftSimpleRangedSpawnPoint { get { return _leftSimpleRangedSpawnPoint; } }
     public Transform RightSimpleRangedSpawnPoint { get { return _rightSimpleRangedSpawnPoint; } }
     public Transform PatternRangedSpawnPoint1 { get { return _patternRangedSpawnPoint1; } }
@@ -67,7 +67,4 @@ public class BossReferences : MonoBehaviour
     public Transform PlayerTransform { get { return _playerTransform; } }
     public GameObject BossPhase1 { get { return _bossPhase1; } }
     public GameObject BossPhase2 { get { return _bossPhase2; } }
-    public bool IsLastMeleePatternAttack { get { return _isLastMeleePatternAttack; } set { _isLastMeleePatternAttack = value; } }
-    public bool IsActualBackdashActive { get { return _isActualBackdashActive; } set { _isActualBackdashActive = value; } }
-    public bool IsActualDashActive { get { return _isActualDashActive; } set { _isActualDashActive = value; } }
 }

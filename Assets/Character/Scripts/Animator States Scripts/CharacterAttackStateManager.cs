@@ -10,7 +10,7 @@ public class CharacterAttackStateManager : StateMachineBehaviour
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("attacked");
+        animator.ResetTrigger("attack");
         animator.GetComponent<CharacterMovementAndAnimationsController>().IsAttacking = false;
         animator.GetComponentInChildren<CharacterMeleeWeapon>().enabled = false;
     }

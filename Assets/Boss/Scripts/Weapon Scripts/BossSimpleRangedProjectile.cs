@@ -8,14 +8,16 @@ public class BossSimpleRangedProjectile : MonoBehaviour
     void Awake()
     {
         _bossStats = FindFirstObjectByType<BossStats>();
-        Destroy(gameObject, 2.5f);
+        Destroy(gameObject, _bossStats.SimpleRangedProjectileLifetime);
     }
     void Update()
     {
-        transform.Translate(Vector3.forward * _bossStats.SimpleRangedProjectileMovementSpeed * Time.deltaTime);
+        //This object moves forward.
+        transform.Translate(_bossStats.SimpleRangedProjectileMovementSpeed * Time.deltaTime * Vector3.forward);
     }
     void OnTriggerEnter(Collider collider) {
-        if (collider.tag == "Player"){
+        if (collider.CompareTag("Player"))
+        {
             collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.SimpleRangedProjectileDamage);
             Destroy(gameObject);
         }

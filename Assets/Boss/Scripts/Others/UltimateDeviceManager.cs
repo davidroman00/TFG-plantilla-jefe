@@ -12,7 +12,7 @@ public class UltimateDeviceManager : MonoBehaviour
     }
     void OnTriggerEnter(Collider collider)
     {
-        if (collider.tag == "Player")
+        if (collider.CompareTag("Player"))
         {
             _isDeviceDestroyed = true;
             StartCoroutine(WaitForDestroy());

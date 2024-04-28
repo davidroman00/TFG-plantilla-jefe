@@ -6,38 +6,18 @@ using UnityEngine;
 public class BossAreaWeapon : MonoBehaviour
 {
     BossStats _bossStats;
-    Collider _collider;
-    bool _onTrigger;
     void Awake()
     {
-        _bossStats = FindFirstObjectByType<BossStats>();
+        _bossStats = FindFirstObjectByType<BossStats>(); 
+        //Since this script is applied to a prefab object which is to be instantiated dynamically, you have to initialize 'BossStats' that way.
+        //But, be careful if you have more than one script under the same name, and you want to initialize it that way; it won't work correctly.
         Destroy(gameObject, _bossStats.AreaDuration);
     }
-    void Update()
+    void OnTriggerStay(Collider collider)
     {
-        AreaDamageManager();
-    }
-    void OnTriggerEnter(Collider collider)
-    {
-        if (collider.tag == "Player")
+        if (collider.CompareTag("Player"))
         {
-            _onTrigger = true;
-            _collider = collider;
+            collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.AreaAttackDamagePerSecond * Time.deltaTime);
         }
     }
-    void OnTriggerExit(Collider collider)
-    {
-        if (collider.tag == "Player")
-        {
-            _onTrigger = false;
-            _collider = null;
-        }
-    }
-    void AreaDamageManager()
-    {
-        if (_onTrigger)
-        {
-            _collider.GetComponent<CharacterHealthManager>().PlayerRecieveDamage(_bossStats.AreaAttackDamagePerSecond * Time.deltaTime);
-        }
-    }   
 }

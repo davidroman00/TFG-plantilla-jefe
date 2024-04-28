@@ -20,12 +20,12 @@ public class CharacterBackdashStateManager : StateMachineBehaviour
     {
         if (_characterMovementAndAnimationsController.IsActualBackdashActive)
         {
-            _characterController.Move(_characterMovementAndAnimationsController.BackdashMoveDirection.normalized * Time.deltaTime * _characterStats.BackdashMovementSpeed);
+            _characterController.Move(_characterStats.BackdashMovementSpeed * Time.deltaTime * _characterMovementAndAnimationsController.BackdashMoveDirection.normalized);
         }
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.ResetTrigger("backdashed");
+        animator.ResetTrigger("backdash");
         _characterMovementAndAnimationsController.IsBackdashing = false;
     }
 }

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BossStats : MonoBehaviour
-{//el hecho de que haya algunos valores a 0 en el inspector se debe a que, en esa fase, son estadisticas que no se necesitan
+{
+   //Here, there are stored every variable relative to the boss statistics.
+   //The fact that there are some values at 0 on inspector means they are not necessary for the current phase of the boss.
    [SerializeField]
    float _simpleMeleeAttackDamage;
    [SerializeField]
@@ -18,6 +20,8 @@ public class BossStats : MonoBehaviour
    float _ultimateAttackDamage;
    [SerializeField]
    float _patternRangedProjectileLifetime;
+   [SerializeField]
+   float _simpleRangedProjectileLifetime;
    [SerializeField]
    float _areaDuration;
    [SerializeField]
@@ -56,7 +60,12 @@ public class BossStats : MonoBehaviour
    float _bossUltimateHPThreshold;
    [SerializeField]
    float _bossMaxHP;
+   bool _isLastMeleePatternAttack;
+   bool _isActualBackdashActive;
+   bool _isActualDashActive;
 
+   //This section is in charge of exporting every variable in ReadOnly, thanks to the getter.
+   //If you want to modify these variables dynamically, you need a setter instead.
    public float SimpleMeleeAttackDamage { get { return _simpleMeleeAttackDamage; } }
    public float PatternMeleeFinalAttackDamage { get { return _patternMeleeFinalAttackDamage; } }
    public float SimpleRangedProjectileDamage { get { return _simpleRangedProjectileDamage; } }
@@ -64,6 +73,7 @@ public class BossStats : MonoBehaviour
    public float AreaAttackDamagePerSecond { get { return _areaAttackDamagePerSecond; } }
    public float UltimateAttackDamage { get { return _ultimateAttackDamage; } }
    public float PatternRangedProjectileLifetime { get { return _patternRangedProjectileLifetime; } }
+   public float SimpleRangedProjectileLifetime { get { return _simpleRangedProjectileLifetime; } }
    public float AreaDuration { get { return _areaDuration; } }
    public float SimpleMeleeCooldown { get { return _simpleMeleeCooldown; } }
    public float PatternMeleeCooldown { get { return _patternMeleeCooldown; } }
@@ -83,4 +93,7 @@ public class BossStats : MonoBehaviour
    public int BossMaxUltimateUses { get { return _bossMaxUltimateUses; } }
    public float BossUltimateHPThreshold { get { return _bossUltimateHPThreshold; } }
    public float BossMaxHP { get { return _bossMaxHP; } }
+   public bool IsLastMeleePatternAttack { get { return _isLastMeleePatternAttack; } set { _isLastMeleePatternAttack = value; } }
+   public bool IsActualBackdashActive { get { return _isActualBackdashActive; } set { _isActualBackdashActive = value; } }
+   public bool IsActualDashActive { get { return _isActualDashActive; } set { _isActualDashActive = value; } }
 }

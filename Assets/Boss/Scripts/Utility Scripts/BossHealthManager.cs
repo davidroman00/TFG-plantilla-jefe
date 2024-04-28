@@ -18,8 +18,8 @@ public class BossHealthManager : MonoBehaviour
     }
     void Update()
     {
-        if (_currentHealth <= 0){
-            GetComponentInParent<Animator>().SetTrigger("death");
+        if (_currentHealth <= 0 && this.gameObject.name == "BossCollisionsManagerPhase2"){
+            GetComponentInParent<Animator>().SetTrigger("death"); 
         }
     }
 

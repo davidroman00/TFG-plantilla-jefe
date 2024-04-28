@@ -19,7 +19,7 @@ public class BossBackdashMovementManager : StateMachineBehaviour
         _playerPosition.z = _bossReferences.PlayerTransform.position.z;
         _playerPosition.x = -_playerPosition.x;
         _playerPosition.z = -_playerPosition.z;
-        if (_bossReferences.IsActualBackdashActive)
+        if (_bossStats.IsActualBackdashActive)
         {
             animator.transform.position = Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
         }

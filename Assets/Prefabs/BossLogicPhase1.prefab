@@ -1091,7 +1091,7 @@ GameObject:
   - component: {fileID: 903542586377169581}
   - component: {fileID: 2331310196872098207}
   m_Layer: 6
-  m_Name: BossColisionsManager
+  m_Name: BossColisionsManagerPhase1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3818,6 +3818,7 @@ MonoBehaviour:
   _areaAttackDamagePerSecond: 12
   _ultimateAttackDamage: 0
   _patternRangedProjectileLifetime: 8
+  _simpleRangedProjectileLifetime: 2.5
   _areaDuration: 15
   _simpleMeleeCooldown: 8
   _patternMeleeCooldown: 20
@@ -3830,7 +3831,7 @@ MonoBehaviour:
   _rangedMinDistance: 12
   _dashMinDistance: 12
   _dashMaxDistance: 7.5
-  _dashMovementSpeed: 32.5
+  _dashMovementSpeed: 40
   _simpleRangedProjectileMovementSpeed: 35
   _patternRangedProjectileMovementSpeed: 4
   _bossMovementSpeed: 7

@@ -4,20 +4,21 @@ using UnityEngine;
 
 public class CharacterAnimationEvents : MonoBehaviour
 {
-    WeaponDamageManager _weaponDamageManager;
+    CharacterMeleeWeapon _characterMeleeWeapon;
     CharacterMovementAndAnimationsController _characterMovementAndAnimationsController;
     void Awake()
     {
-        _weaponDamageManager = GetComponentInChildren<WeaponDamageManager>();
+        _characterMeleeWeapon = GetComponentInChildren<CharacterMeleeWeapon>();
         _characterMovementAndAnimationsController = GetComponent<CharacterMovementAndAnimationsController>();
     }
+    //These are public methods so they can be accessed through an animation event
     public void OnAttackStart()
     {
-        _weaponDamageManager.enabled = true;
+        _characterMeleeWeapon.enabled = true;
     }
     public void OnAttackMid()
     {
-        _weaponDamageManager.enabled = false;
+        _characterMeleeWeapon.enabled = false;
     }
     public void ActualBackdashStart()
     {

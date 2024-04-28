@@ -14,7 +14,7 @@ public class CharacterBackdashStateManager : StateMachineBehaviour
         _characterMovementAndAnimationsController = animator.GetComponent<CharacterMovementAndAnimationsController>();
         _characterController = animator.GetComponent<CharacterController>();
         _characterStats = animator.GetComponent<CharacterStats>();
-        _characterMovementAndAnimationsController.IsBackdashing = true; //para evitar que el pj se mueva durante la animacion
+        _characterMovementAndAnimationsController.IsBackdashing = true; //This line here is necessary to avoid the character moving while the animation lasts.
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

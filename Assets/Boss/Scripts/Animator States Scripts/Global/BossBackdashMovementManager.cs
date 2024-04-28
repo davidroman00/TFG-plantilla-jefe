@@ -22,7 +22,6 @@ public class BossBackdashMovementManager : StateMachineBehaviour
         if (_bossReferences.IsActualBackdashActive)
         {
             animator.transform.position = Vector3.MoveTowards(animator.transform.position, _playerPosition, _bossStats.DashMovementSpeed * Time.deltaTime);
-            Debug.Log(animator.transform.position);
         }
     }
 

@@ -11,7 +11,9 @@ public class CharacterHealthManager : MonoBehaviour
     CharacterUIHealthManager _characterHealthUI;
     [SerializeField]
     GameObject _deathTextUI;
-    void Start()//por el orden de ejecución aqui hay que usar start en vez de awake, si no, el script se apaga al comienzo del juego
+    void Start()
+    //Usually, you want to intialize scripts in the Awake() method.
+    //However, due to Unity's execution order, you need to use the Start() method here, so it doesn't crash.
     {
         _characterStats = GetComponent<CharacterStats>();
         _currentHealth = _characterStats.MaxHealth;

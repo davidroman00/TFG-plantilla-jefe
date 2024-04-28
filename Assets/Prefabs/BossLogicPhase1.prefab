@@ -3828,11 +3828,11 @@ MonoBehaviour:
   _backDashCooldown: 10
   _meleeMaxDistance: 4.25
   _rangedMinDistance: 12
-  _dashMinDistance: 10
-  _dashMaxDistance: 6
-  _dashMovementSpeed: 25
+  _dashMinDistance: 12
+  _dashMaxDistance: 7.5
+  _dashMovementSpeed: 32.5
   _simpleRangedProjectileMovementSpeed: 35
-  _patternRangedProjectileMovementSpeed: 2.5
+  _patternRangedProjectileMovementSpeed: 4
   _bossMovementSpeed: 7
   _bossMaxUltimateUses: 0
   _bossUltimateHPThreshold: 0

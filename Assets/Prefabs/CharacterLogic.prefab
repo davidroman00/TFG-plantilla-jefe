@@ -4255,9 +4255,9 @@ GameObject:
   - component: {fileID: 8728904471696148943}
   - component: {fileID: 8587698868646727209}
   - component: {fileID: 8364505284981544065}
+  - component: {fileID: 3916761668276023701}
   - component: {fileID: 4868598328007484735}
   - component: {fileID: 3980809911418150975}
-  - component: {fileID: 3916761668276023701}
   - component: {fileID: 136707756866259424}
   m_Layer: 0
   m_Name: CharacterLogic
@@ -4295,7 +4295,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 4835302a89dccd74a866936fa0948531, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
   m_AnimatePhysics: 0
@@ -4353,6 +4353,24 @@ CapsuleCollider:
   m_Height: 3.6
   m_Direction: 1
   m_Center: {x: 0, y: 1.7, z: 0}
+--- !u!114 &3916761668276023701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929458641644326392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bfce2a7feaf17c4ab68733a6fcb3ce9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
+  _movementSpeed: 10
+  _backdashMovementSpeed: 20
+  _attackDamage: 10
+  _attackCooldown: 1
+  _backdashCooldown: 2.5
 --- !u!114 &4868598328007484735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4382,24 +4400,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _characterHealthUI: {fileID: 0}
   _deathTextUI: {fileID: 0}
---- !u!114 &3916761668276023701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6929458641644326392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7bfce2a7feaf17c4ab68733a6fcb3ce9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _maxHealth: 100
-  _movementSpeed: 10
-  _backdashMovementSpeed: 20
-  _attackDamage: 10
-  _attackCooldown: 1
-  _backdashCooldown: 2.5
 --- !u!114 &136707756866259424
 MonoBehaviour:
   m_ObjectHideFlags: 0

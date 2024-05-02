@@ -16,8 +16,7 @@ public class BossBackdashStateManager : StateMachineBehaviour
         _playerPosition.x = _bossReferences.PlayerTransform.position.x;
         _playerPosition.z = _bossReferences.PlayerTransform.position.z;
         _playerPosition.x = -_playerPosition.x;
-        _playerPosition.z = -_playerPosition.z;
-        
+        _playerPosition.z = -_playerPosition.z;        
         _bossPosition.x = animator.transform.position.x;
         _bossPosition.z = animator.transform.position.z;
 
@@ -34,8 +33,5 @@ public class BossBackdashStateManager : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("backdash");
-        _playerPosition = Vector3.zero;
-        _bossPosition = Vector3.zero;
-        _moveDirection = Vector3.zero;
     }
 }

@@ -1164,6 +1164,7 @@ MonoBehaviour:
   _ultimateBossPosition: {fileID: 0}
   _ultimateWeaponSpawnPoint: {fileID: 0}
   _ultimateDeviceSpawnPoint: {fileID: 0}
+  _arenaCenter: {fileID: 0}
   _simpleProjectilePrefab: {fileID: 1984392666180939125, guid: 08f7303b99cdf2e4e8654eeb92d76567, type: 3}
   _patternProjectilePrefab: {fileID: 2407514091668632324, guid: ff63adeb774f76b42af356f88bed963e, type: 3}
   _areaPrefab: {fileID: 1889858573898582423, guid: b9c4212df75104e4ba9195d2213cffaf, type: 3}
@@ -1184,31 +1185,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19eacc8973b76a642940f3b7c5b17ade, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _simpleMeleeAttackDamage: 6.5
-  _patternMeleeFinalAttackDamage: 15
-  _simpleRangedProjectileDamage: 6
-  _patternRangedProjectileDamage: 9
-  _areaAttackDamagePerSecond: 16
+  _simpleMeleeAttackDamage: 7.5
+  _patternMeleeFinalAttackDamage: 18
+  _simpleRangedProjectileDamage: 6.5
+  _patternRangedProjectileDamage: 10
+  _areaAttackDamagePerSecond: 20
   _ultimateAttackDamage: 999999
   _patternRangedProjectileLifetime: 12
   _simpleRangedProjectileLifetime: 2.5
-  _areaDuration: 22.5
-  _simpleMeleeCooldown: 18
-  _patternMeleeCooldown: 10
-  _simpleRangedCooldown: 3.5
-  _patternRangedCooldown: 20
-  _areaCooldown: 22.5
-  _simpleDashCooldown: 4
-  _backDashCooldown: 6
+  _areaDuration: 25
+  _simpleMeleeCooldown: 5
+  _patternMeleeCooldown: 12
+  _simpleRangedCooldown: 5
+  _patternRangedCooldown: 25
+  _areaCooldown: 20
+  _simpleDashCooldown: 2.5
+  _backDashCooldown: 3.5
   _ultimateCooldown: 60
   _meleeMaxDistance: 4
-  _rangedMinDistance: 12
-  _dashMinDistance: 10
-  _dashMaxDistance: 6
-  _dashMovementSpeed: 30
-  _simpleRangedProjectileMovementSpeed: 45
-  _patternRangedProjectileMovementSpeed: 3
-  _bossMovementSpeed: 7.5
+  _rangedMinDistance: 10
+  _dashMinDistance: 12
+  _dashMaxDistance: 7.5
+  _dashMovementSpeed: 45
+  _simpleRangedProjectileMovementSpeed: 50
+  _patternRangedProjectileMovementSpeed: 4
+  _bossMovementSpeed: 8
   _bossMaxUltimateUses: 2
   _bossUltimateHPThreshold: 200
   _bossMaxHP: 400

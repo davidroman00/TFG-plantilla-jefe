@@ -3,14 +3,15 @@ using UnityEngine;
 public class BossWalkToPhaseChange : StateMachineBehaviour
 {
     BossStats _bossStats;
-    Vector3 _arenaCenter = new(0, 0, 0);
+    BossReferences _bossReferences;
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         _bossStats = animator.GetComponent<BossStats>();
+        _bossReferences = animator.GetComponent<BossReferences>();
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if (animator.transform.position != _arenaCenter)
+        if (animator.transform.position != _bossReferences.ArenaCenter.position)
         {
             BossWalkToPosition(animator);
         }
@@ -26,7 +27,7 @@ public class BossWalkToPhaseChange : StateMachineBehaviour
     }
     void BossWalkToPosition(Animator animator)
     {
-        animator.transform.position = Vector3.MoveTowards(animator.transform.position, _arenaCenter, _bossStats.BossMovementSpeed * Time.deltaTime);
-        animator.transform.LookAt(_arenaCenter);
+        animator.transform.position = Vector3.MoveTowards(animator.transform.position, _bossReferences.ArenaCenter.position, _bossStats.BossMovementSpeed * Time.deltaTime);
+        animator.transform.LookAt(_bossReferences.ArenaCenter.position);
     }
 }

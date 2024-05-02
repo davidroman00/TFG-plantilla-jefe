@@ -29,6 +29,8 @@ public class BossReferences : MonoBehaviour
     [SerializeField]
     Transform _ultimateDeviceSpawnPoint;
     [SerializeField]
+    Transform _arenaCenter;
+    [SerializeField]
     GameObject _simpleProjectilePrefab;
     [SerializeField]
     GameObject _patternProjectilePrefab;
@@ -57,6 +59,7 @@ public class BossReferences : MonoBehaviour
     public Transform UltimateBossPosition { get { return _ultimateBossPosition; } }
     public Transform UltimateWeaponSpawnPoint { get { return _ultimateWeaponSpawnPoint; } }
     public Transform UltimateDeviceSpawnPoint { get {return _ultimateDeviceSpawnPoint; } }
+    public Transform ArenaCenter { get { return _arenaCenter; } }
     public GameObject SimpleProjectilePrefab { get { return _simpleProjectilePrefab; } }
     public GameObject PatternProjectilePrefab { get {return _patternProjectilePrefab; } }
     public GameObject AreaPrefab { get { return _areaPrefab; } }

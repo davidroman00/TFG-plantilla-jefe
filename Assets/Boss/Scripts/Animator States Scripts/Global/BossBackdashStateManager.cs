@@ -28,7 +28,6 @@ public class BossBackdashStateManager : StateMachineBehaviour
     {     
         if (_bossStats.IsActualBackdashActive && !_bossStats.IsOutsideArena)
         {
-            Debug.Log(_bossStats.IsOutsideArena);
             animator.transform.Translate(_bossStats.DashMovementSpeed * Time.deltaTime * _moveDirection.normalized);
         }        
     }

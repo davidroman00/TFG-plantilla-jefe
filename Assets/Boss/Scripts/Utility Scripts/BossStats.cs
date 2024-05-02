@@ -63,6 +63,7 @@ public class BossStats : MonoBehaviour
    bool _isLastMeleePatternAttack;
    bool _isActualBackdashActive;
    bool _isActualDashActive;
+   bool _isOutsideArena;
 
    //This section is in charge of exporting every variable in ReadOnly, thanks to the getter.
    //If you want to modify these variables dynamically, you need a setter instead.
@@ -97,4 +98,5 @@ public class BossStats : MonoBehaviour
    public bool IsLastMeleePatternAttack { get { return _isLastMeleePatternAttack; } set { _isLastMeleePatternAttack = value; } }
    public bool IsActualBackdashActive { get { return _isActualBackdashActive; } set { _isActualBackdashActive = value; } }
    public bool IsActualDashActive { get { return _isActualDashActive; } set { _isActualDashActive = value; } }
+   public bool IsOutsideArena { get { return _isOutsideArena; } set { _isOutsideArena = value; } }
 }

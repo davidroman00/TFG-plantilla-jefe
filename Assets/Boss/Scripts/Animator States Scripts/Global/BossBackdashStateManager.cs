@@ -21,12 +21,14 @@ public class BossBackdashStateManager : StateMachineBehaviour
         _bossPosition.x = animator.transform.position.x;
         _bossPosition.z = animator.transform.position.z;
 
+        //This line here is calculating the direction vector to be applied.
         _moveDirection = _playerPosition - _bossPosition;        
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {     
-        if (_bossStats.IsActualBackdashActive)
+        if (_bossStats.IsActualBackdashActive && !_bossStats.IsOutsideArena)
         {
+            Debug.Log(_bossStats.IsOutsideArena);
             animator.transform.Translate(_bossStats.DashMovementSpeed * Time.deltaTime * _moveDirection.normalized);
         }        
     }

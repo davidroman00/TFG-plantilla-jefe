@@ -4367,7 +4367,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _maxHealth: 100
   _movementSpeed: 10
-  _backdashMovementSpeed: 20
+  _backdashMovementSpeed: 25
   _attackDamage: 10
   _attackCooldown: 1
   _backdashCooldown: 2.5

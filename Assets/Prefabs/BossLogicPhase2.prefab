@@ -1203,7 +1203,7 @@ MonoBehaviour:
   _backDashCooldown: 3.5
   _ultimateCooldown: 60
   _meleeMaxDistance: 4
-  _rangedMinDistance: 10
+  _rangedMinDistance: 12.5
   _dashMinDistance: 12
   _dashMaxDistance: 7.5
   _dashMovementSpeed: 45

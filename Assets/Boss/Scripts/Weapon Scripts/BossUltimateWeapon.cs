@@ -10,7 +10,7 @@ public class BossUltimateWeapon : MonoBehaviour
     void Update()
     {
         //This object grows at a constant rate.
-        transform.localScale += new Vector3(60 * Time.deltaTime, 60 * Time.deltaTime , 60 * Time.deltaTime);
+        transform.localScale += new Vector3(120 * Time.deltaTime, 120 * Time.deltaTime , 120 * Time.deltaTime);
     }
     void OnTriggerEnter(Collider collider)
     {

@@ -16,6 +16,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
     }
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+
         PhaseChangeChecker(animator);
         PatternRangedChecker(animator);
         SimpleRangedChecker(animator);
@@ -23,6 +24,7 @@ public class BossIdleAnimationManagerPhase1 : StateMachineBehaviour
         SimpleDashChecker(animator);
         BackdashChecker(animator);
         AreaChecker(animator);
+
     }
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {

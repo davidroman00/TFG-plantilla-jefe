@@ -3830,7 +3830,7 @@ MonoBehaviour:
   _backDashCooldown: 7.5
   _ultimateCooldown: 0
   _meleeMaxDistance: 4
-  _rangedMinDistance: 10
+  _rangedMinDistance: 12.5
   _dashMinDistance: 12
   _dashMaxDistance: 7.5
   _dashMovementSpeed: 40
@@ -3839,7 +3839,7 @@ MonoBehaviour:
   _bossMovementSpeed: 6.5
   _bossMaxUltimateUses: 0
   _bossUltimateHPThreshold: 0
-  _bossMaxHP: 250
+  _bossMaxHP: 200
 --- !u!114 &7753095842183392368
 MonoBehaviour:
   m_ObjectHideFlags: 0
